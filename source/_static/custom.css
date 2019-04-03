@@ -1,0 +1,50 @@
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+.wy-nav-content {
+    /* max-width: none; */
+    max-width: 1200px !important;
+}
+
+/* Sidebar header (and topbar for mobile) */
+.wy-side-nav-search, .wy-nav-top {
+  background: #6633CC !important;
+}
+/* Sidebar */
+.wy-nav-side {
+  background: #eceff1 !important;
+  color: #6633CC !important;
+}
+
+.wy-nav-side li a {
+  color: #6633CC !important;
+}
+
+/* headerlink */
+.headerlink {
+    color: #6633CC !important;
+
+}
+
+.current a {
+    color: #6633CC !important;
+
+}
+
+.wy-menu-vertical li {
+    color: #6633CC !important;
+
+}
+
+.toctree-l1 a:hover {
+    background: #C8BCE0 !important;
+
+}
+
+.toctree-l2 a:hover {
+    color: #2d3436 !important;
+}
+
