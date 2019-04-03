@@ -2,14 +2,10 @@
 Playlists
 ##############
 
-Introduction text.
-
 
 **************
 Playlists list
 **************
-
-Sample content.
 
 
 ****************
@@ -30,4 +26,3 @@ Playlist form
 Schedule a playlist
 *******************
 
-And some text.

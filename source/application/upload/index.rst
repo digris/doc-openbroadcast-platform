@@ -1,7 +1,7 @@
 Upload
 =======
 
-A guide to upload and import audio files in the music library.
+A guide to upload and import audio files in the library.
 
 ***************
 Uploading files
@@ -25,7 +25,7 @@ Uploading files
 
         Use 'Notes' field to add information about the new upload session (optional).
 
-#. To add audio files, click on 'ADD FILES' or drag-n-drop them from your desktop / file browser into the white box.
+#. To add audio files, click on 'ADD FILES' or drag-n-drop them from the desktop or file browser into the white box.
 
     .. warning::
 
@@ -43,53 +43,56 @@ Uploading files
 Importing files
 ***************
 
-Once the upload is complete, one of the following situations will be presented for each file:
+Once the upload is complete, each file is analysed and one of the following situations will be presented:
 
-        #. :ref:`Mandatory <Mandatory_information>` information must be filled in to continue importing the file.
-        #. The file was recognized as :ref:`duplicate <Duplicate_File>` (it's already available in the library).
-        #. The file was :ref:`pre-tagged <Pretagged_File>` with Picard and was automatically imported in the library.
+    #. :ref:`Mandatory <Mandatory_information>` information must be filled in to continue importing the file.
+    #. The file was recognized as :ref:`duplicate <Duplicate_File>` (it's already available in the library).
+    #. The file was :ref:`pre-tagged <Pretagged_File>` with Picard and was automatically imported in the library.
 
 .. _Mandatory_information:
 
 Fill in mandatory information
 -----------------------------
 
-.. figure:: img/import_000_c.png
+Mandatory information ('Selected information') consists in:
 
-Mandatory information ('Selected information') consists in track title, release title and artist name.
+ * **Title:** The title of the recording (track).
+ * **Release:** The name of the release the recording (track) appear on.
+ * **Artist:** The name of the artist(s) that the recording is primarily credited to.
 
-Additional information and functions are available for each file:
-
-    * **A.** The original filename and audio format (as displayed in the computer file browser).
-    * **B.** Metadata information contained in the audio file (visible on common media players).
-    * **C.** Mandatory information.
-    * **Remove file** Remove and don't import the file.
-    * **Scan again** Generates an acoustic ID for the file and use it to find matching recordings on Musicbrainz.
-    * **Continue import** Import the file (mandatory information must be filled in).
+To assist the editing procedure, additional information and functions are available:
 
 .. figure:: img/import_001.png
 
     Thumb will switch to 'Up' once mandatory information are provided.
 
-Mandatory information can be entered :ref:`manually <Manual_editing>`, copy/pasted from the :ref:`metadata container <Metadata_edit>` or from a :ref:`match on Musicbrainz <Mbrainz_edit>`.
-More information like record label or track credits can be entered in a second stage using the respective 'Release', 'Artist', 'Track' or 'Label' forms.
+* **A. Filename:** the original filename and audio format (as displayed in the computer file browser).
+* **B. Metadata:** the information contained in the audio file (visible on common media players).
+* **C. Selected information:** the mandatory information.
+* **Remove file** Remove and don't import the file.
+* **Scan again** Generates an acoustic ID for the file and use it to find matching recordings on Musicbrainz.
+* **Continue import** Import the file (mandatory information must be filled in).
+
+Mandatory information can be entered :ref:`manually <Manual_editing>`, copy / pasted from the :ref:`metadata container <Metadata_edit>` or from a :ref:`match on Musicbrainz <Mbrainz_edit>`.
+More information like record label or track credits can be can be added at a later stage using the respective 'Release', 'Artist', 'Track' or 'Label' forms.
 
 .. _Manual_editing:
 
 Manual editing
 ^^^^^^^^^^^^^^
-Click inside a field to enter information. Starting to write inside the 'Release' and / or 'Artist' fields will activate the auto-completion listing already existing profiles.
+Move the cursor inside a field and click in it to start entering information.
 
+Typing inside the 'Release' and 'Artist' fields activate the auto-completion, listing profiles already existing in the library.
 The following examples show how to 'create' a new release and 'assign' it an existing artist.
 
 .. _Create_new_profile:
 
 Creating a new release profile
-"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
 
 .. figure:: img/import_mn_001.png
 
-    Click outside the list to close it (implies the creation of a new profile).
+    Click outside the list to close it (implies the creation of a new release profile).
 
 .. figure:: img/import_mn_002.png
 
@@ -97,8 +100,8 @@ Creating a new release profile
 
 .. hint::
 
-    #. To change release click inside the release field and enter again the release title (reactivates autocomplete).
-    #. If all files share the same release title (i.e. an album or compilation), click on **'Apply Release to all'** to complete all 'release' fields at one go.
+    #. To change release, click inside the release field and enter again the release title (reactivates autocomplete).
+    #. If all uploaded files share the same release title (i.e. an album or compilation), click on **'Apply Release to all'** to complete all 'release' fields at one go.
 
 .. _Assign_to_profile:
 

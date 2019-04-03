@@ -8,7 +8,6 @@ Welcome to Open Broadcast Platform's documentation!
 
 .. toctree::
     :maxdepth: 3
-    :caption: Contents:
 
     application/index
 

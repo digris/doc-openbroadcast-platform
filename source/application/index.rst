@@ -5,7 +5,6 @@ Open broadcast platform
 .. toctree::
     :maxdepth: 3
 
-    navigation/index
     users/index
     stations/index
     activities/index

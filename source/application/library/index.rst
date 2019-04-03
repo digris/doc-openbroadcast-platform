@@ -2,14 +2,12 @@
 Music library
 ##############
 
-Introduction text.
 
 
 *********
 Releases
 *********
 
-Sample content.
 
 Releases list
 =============
@@ -60,10 +58,3 @@ Label profile
 Labels form
 ===========
 
-Sample H5
-^^^^^^^^^
-
-Sample H6
-"""""""""
-
-And some text.
