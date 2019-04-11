@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Open Broadcast Platform's documentation!
+Welcome to open broadcast platform's documentation!
 ===================================================
 
 .. toctree::

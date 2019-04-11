@@ -1,7 +1,10 @@
+#######
 Upload
-=======
+#######
 
-A guide to upload and import audio files in the library.
+A guide to :ref:`upload <uploading_files>` and :ref:`import <importing_files>` audio files (recordings) in the library.
+
+.. _uploading_files:
 
 ***************
 Uploading files
@@ -19,7 +22,7 @@ Uploading files
 
         Below are listed the previous upload sessions.
 
-#. Confirm that you agree to the 'Terms & Conditions' and that you have read our 'documentation'. Then click on 'AGREE & CONTINUE'.
+#. Confirm that you agree to the 'Terms & Conditions' and that you have read the 'documentation'. Then click on 'AGREE & CONTINUE'.
 
     .. figure:: img/upload_003.png
 
@@ -39,60 +42,90 @@ Uploading files
 
         If the upload doesn't start automatically, click on 'START UPLOAD'.
 
+Once the upload is completed, the files will have to be :ref:`imported <importing_files>`.
+
+.. _importing_files:
+
 ***************
 Importing files
 ***************
 
-Once the upload is complete, each file is analysed and one of the following situations will be presented:
+To assist the importing procedure, a preliminary analysis is performed on the files and one of the following situations will be presented:
 
-    #. :ref:`Mandatory <Mandatory_information>` information must be filled in to continue importing the file.
-    #. The file was recognized as :ref:`duplicate <Duplicate_File>` (it's already available in the library).
-    #. The file was :ref:`pre-tagged <Pretagged_File>` with Picard and was automatically imported in the library.
+* :ref:`Mandatory information <mandatory_information>` are missing and must be filled in to continue importing the file.
+* The file was recognized as :ref:`duplicate <duplicate_file>` (it already exists in the library) and a choice is required.
+* The file was :ref:`pre-tagged <pretagged_file>` with `Picard <https://picard.musicbrainz.org/>`_ and was automatically imported in the library.
 
-.. _Mandatory_information:
+Import summary
+===============
+
+The 'Summary Current Import' displays the status of the whole import session.
+
+.. figure:: img/import_000_summary.png
+   :width: 300px
+   :height: 400px
+
+Legend:
+
+* **Ready to import:** file/s ready to be imported in the library (the :ref:`mandatory information <mandatory_information>` has been completed).
+* **Import completed:** file/s imported in the libray (file/s :ref:`pre-tagged <pretagged_file>` with Picard is/are automatically imported in the library).
+* **Duplicates:** file/s recognized as :ref:`possible duplicate <duplicate_file>` (already existing in the library).
+* **Processing:** file/s has been processed (placed in the import queue).
+* **Information needed:** file/s missing :ref:`mandatory information <mandatory_information>` to continue importing.
+* **Errors:** errors occurred while uploading / importing.
+
+.. _mandatory_information:
 
 Fill in mandatory information
------------------------------
+=============================
 
-Mandatory information ('Selected information') consists in:
+Mandatory information ('Selected information') are required to import and organize the file/s in the library.
 
- * **Title:** The title of the recording (track).
- * **Release:** The name of the release the recording (track) appear on.
- * **Artist:** The name of the artist(s) that the recording is primarily credited to.
+The minimum information required are:
 
-To assist the editing procedure, additional information and functions are available:
+* **Title:** The title of the recording (track).
+* **Release:** The name of the release the recording (track) appear on.
+* **Artist:** The name of the artist(s) that the recording is primarily credited to.
+
+.. note::
+
+    More information (i.e. cover art, record label or additional artists) can be can be added at a later stage using the respective :ref:`release <release_form>`, :ref:`artist <artist_form>`, :ref:`track <track_form>` or :ref:`label <label_form>` forms.
+
+To assist the editing procedure, the following information and functions are included in the recording form:
 
 .. figure:: img/import_001.png
 
-    Thumb will switch to 'Up' once mandatory information are provided.
+    Thumb will switch to 'Up' once mandatory information are completed.
 
-* **A. Filename:** the original filename and audio format (as displayed in the computer file browser).
-* **B. Metadata:** the information contained in the audio file (visible on common media players).
-* **C. Selected information:** the mandatory information.
+* **Filename (A):** the original filename and audio format (as displayed in the computer file browser).
+* **Metadata (B):** the information contained in the file (visible on common media players).
+* **Selected information (C):** the mandatory information.
 * **Remove file** Remove and don't import the file.
-* **Scan again** Generates an acoustic ID for the file and use it to find matching recordings on Musicbrainz.
+* **Scan again** Generates an acoustic ID and use it to find matching recordings on Musicbrainz.
 * **Continue import** Import the file (mandatory information must be filled in).
 
-Mandatory information can be entered :ref:`manually <Manual_editing>`, copy / pasted from the :ref:`metadata container <Metadata_edit>` or from a :ref:`match on Musicbrainz <Mbrainz_edit>`.
-More information like record label or track credits can be can be added at a later stage using the respective 'Release', 'Artist', 'Track' or 'Label' forms.
+Mandatory information can be entered :ref:`manually <manual_editing>`, copied from the :ref:`metadata container <copying_metadata>` or from a :ref:`match found on Musicbrainz <match_on_musicbrainz>`.
 
-.. _Manual_editing:
+.. _manual_editing:
 
 Manual editing
-^^^^^^^^^^^^^^
-Move the cursor inside a field and click in it to start entering information.
+--------------
+Move the cursor over a field and click on it to start entering information.
+Typing inside the 'Release' and 'Artist' fields activate the auto-completion, recommending profiles already in the library.
+Click on a recommended profile to select it or outside the field to create a new one.
 
-Typing inside the 'Release' and 'Artist' fields activate the auto-completion, listing profiles already existing in the library.
-The following examples show how to 'create' a new release and 'assign' it an existing artist.
+The following examples show how to 'create' a new release and 'assign' it to an existing artist.
 
-.. _Create_new_profile:
+.. _creating_new_profile:
 
 Creating a new release profile
-""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To create a new 'Release', type the release title and click outside the field to confirm it.
 
 .. figure:: img/import_mn_001.png
 
-    Click outside the list to close it (implies the creation of a new release profile).
+    Clicking outside the field also close the auto completion matches list (implies that nothing was selected / a new release profile will be created).
 
 .. figure:: img/import_mn_002.png
 
@@ -100,13 +133,15 @@ Creating a new release profile
 
 .. hint::
 
-    #. To change release, click inside the release field and enter again the release title (reactivates autocomplete).
-    #. If all uploaded files share the same release title (i.e. an album or compilation), click on **'Apply Release to all'** to complete all 'release' fields at one go.
+    #. To change release, click inside the 'Release' field and enter again the release title (reactivates autocomplete).
+    #. If all uploaded files share the same release title (i.e. an album or compilation), click on **'Apply Release to all'** to complete all 'Release' fields at one go.
 
-.. _Assign_to_profile:
+.. _assigning_to_profile:
 
 Assigning an artist profile
-""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To assign a recording to an existing artist, click on a profile recommended by the auto completion.
 
 .. figure:: img/import_mn_003.png
 
@@ -119,43 +154,45 @@ Assigning an artist profile
 .. hint::
 
     #. To create a new artist profile click on **'Force Creation'**.
-    #. To change artist click inside the artist field and enter again the artist name (reactivates autocomplete).
-    #. If all files share the same artist name (i.e. an album, ep), click on **'Apply Artist to all'** to complete all 'artist' fields at one go.
+    #. To change artist, click inside the 'Artist' field and enter again the artist name (reactivates autocomplete).
+    #. If all files share the same artist name (i.e. an album, ep), click on **'Apply Artist to all'** to complete all 'Artist' fields at one go.
 
 Once mandatory information are completed, click on 'CONTINUE IMPORT' to import the file in the library.
 
 .. figure:: img/import_mn_005.png
 
-    Note 'Thumb' is Up (ready to be imported).
+    Note the 'Thumb' switched to Up (ready to be imported).
 
-.. _Metadata_edit:
+.. _copying_metadata:
 
-Copy from metadata container
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Copying metadata
+----------------
 
-If available, mandatory information can be transferred from the file metadata container.
+Mandatory fields can be filled at one go by copying the information available in the metadata container.
+To do so, highlight the metadata box and click anywhere in it.
 
 .. figure:: img/import_mt_001.png
 
-    Click anywhere inside the metadata container row to transfer information.
+    Click anywhere inside the metadata box to transfer information.
 
 .. figure:: img/import_mt_002.png
 
     A green checkmark informs copy was successfully completed.
 
-Verify release / artist information and continue importing following the steps described :ref:`here <Create_new_profile>`.
+Verify accuracy of release and artist information as described :ref:`here <creating_new_profile>` and click on 'CONTINUE IMPORT' to import the file.
 
-.. _Mbrainz_edit:
 
-Copy from Musicbrainz match
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _match_on_musicbrainz:
 
-After uploading, an `Acoustic ID <https://acoustid.org/>`_ for the file is generated and used to find matching recordings on Musibrainz database.
-If available, matches are listed between the 'File metadata' and 'Selected information' (mandatory fields).
+Selecting a match on Musicbrainz
+--------------------------------
+
+A match with a recording on `Musicbrainz <https://musicbrainz.org/>`_ was found using the `Acoustic ID <https://acoustid.org/>`_.
+When found, matches are listed between the 'File metadata' and 'Selected information' (mandatory fields).
 
 .. figure:: img/import_mb_001.png
 
-Select one of the proposed match,
+Select one of the proposed match.
 
 .. figure:: img/import_mb_002.png
 
@@ -165,27 +202,27 @@ Click on 'CONTINUE IMPORT' to import the file.
 
 .. figure:: img/import_mb_003.png
 
-.. _Duplicate_File:
+.. _duplicate_file:
 
 Possible duplicate
---------------------
+==================
 
-After uploading, an audio fingerprint is generated and used to find match with recordings in the library.
-If a file already exists, a "possible duplicate" box will be displayed:
+A match with a recording in the library was found.
 
 .. figure:: img/import_dp_001.png
 
-Click on 'REMOVE FILE' to don't import it again or on 'Re-IMPORT FILE' if the file is not a duplicate (wrong recognition).
-One of the situations described :ref:`here information <Mandatory_information>` will occur.
+    Click on the track title to open the recording profile and verify the accuracy of the match.
 
-.. _Pretagged_File:
+Click on 'REMOVE FILE' to remove and don't import the uploaded file or on 'Re-IMPORT FILE' if the file was not a duplicate (wrong match).
+When clicking on 'Re-IMPORT FILE', one of the situations described :ref:`here <importing_files>` will be presented.
 
-Pre-tagged
---------------------
+.. _pretagged_file:
 
-During the analysis, a Musicbrainz Identifier code has been found inside the container of the file (metadata).
-This happens when the file was previously tagged using Picard, a desktop music tagger developed by Musicbrainz.
-When audio files are previously tagged with Picard, after being uploaded they will be automatically imported in the library.
+Pre-tagged file
+================
+
+The analysis discovered a `Musicbrainz ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>` inside the metadata container and the file was automatically imported in the library.
+This happens when a file is previously tagged using `Picard <https://picard.musicbrainz.org/>`, a desktop music tagger by `Musicbrainz <https://musicbrainz.org/>`.
 
 .. figure:: img/import_pt_001.png
 

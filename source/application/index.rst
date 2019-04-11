@@ -1,5 +1,5 @@
 
-Open broadcast platform
+open broadcast platform
 ===================================================
 
 .. toctree::

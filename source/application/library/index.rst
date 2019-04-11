@@ -1,5 +1,5 @@
 ##############
-Music library
+Library
 ##############
 
 
@@ -8,12 +8,17 @@ Music library
 Releases
 *********
 
+.. _release_list:
 
 Releases list
 =============
 
+.. _release_profile:
+
 Release profile
 ===============
+
+.. _release_form:
 
 Release form
 ============
@@ -23,11 +28,18 @@ Release form
 Artists
 **********
 
+.. _artist_list:
+
 Artists list
 ============
 
+
+.. _artist_profile:
+
 Artist profile
 ==============
+
+.. _artist_form:
 
 Artist form
 ===========
@@ -36,11 +48,18 @@ Artist form
 Tracks
 **********
 
+.. _track_list:
+
 Tracks list
 ===========
 
+
+.. _track_profile:
+
 Track profile
 =============
+
+.. _track_form:
 
 Track form
 ===========
@@ -49,12 +68,19 @@ Track form
 Labels
 **********
 
+.. _label_list:
+
 Labels list
 ===========
+
+.. _label_profile:
 
 Label profile
 =============
 
-Labels form
+
+.. _label_form:
+
+Label form
 ===========
 
