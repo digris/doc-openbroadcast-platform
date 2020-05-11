@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Open Broadcast Platform'
-copyright = '2018, Digris AG'
+copyright = '2020, Digris AG'
 author = 'Digris AG'
 
 # The short X.Y version

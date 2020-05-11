@@ -7,14 +7,12 @@ Welcome to open broadcast platform's documentation!
 ===================================================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     application/index
 
-
-Indices and tables
+Quick links
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+* :ref:`Uploading and importing files in the library <new-upload>`
+

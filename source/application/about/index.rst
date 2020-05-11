@@ -1,7 +1,10 @@
+.. _about:
+
 ##############
 About
 ##############
 
+UNDER CONSTRUCTION
 
 ***********
 Contact

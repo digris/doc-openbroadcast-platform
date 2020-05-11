@@ -1,83 +1,136 @@
 /* Generic typography setting for open broadcast */
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
-    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-    font-weight: 300;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
-
-/* rtd sidebar search form */
-
-.wy-side-nav-search input[type="text"] {
-
-    width: 100%;
-    border-radius: 0;
-    padding: 6px 12px;
-    border-color: #f5f5f5;
-
-}
-
-/* active links */
-a {
-    color: #6633CC;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* sidebar navigation */
 
 .wy-nav-side {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding-bottom: 2em;
-    width: 300px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    min-height: 100%;
-    color: #6633CC;
-    background: #f5f5f5;
-    z-index: 200;
+  text-transform: uppercase;
+  background-color: #6633CC;
+}
+.wy-nav-side .icon-home {
+  text-transform: lowercase;
+}
+.wy-nav-side a {
+  color: #fafafa;
+}
+.wy-nav-side a:before {
+  display: none;
 }
 
+.wy-side-nav-search {
+  background-color: #6633CC;
+}
+.wy-side-nav-search input[type=text] {
+  width: 100%;
+  border-radius: 0;
+  padding: 6px 12px;
+  border-color: #6633CC;
+}
 
+.wy-menu-vertical li.toctree-l1 a:hover {
+  color: #fafafa;
+  background-color: rgba(102, 51, 204, 0.79);
+}
+.wy-menu-vertical li.toctree-l1.current > a {
+  border-bottom: none;
+  border-top: none;
+  font-weight: 100;
+  color: #fafafa;
+  background-color: #6633CC;
+}
+.wy-menu-vertical li.toctree-l1.current a {
+  padding: 0.4045em 1.618em;
+  font-weight: 100;
+  color: #fafafa;
+  border-right: 1px solid #6633CC;
+}
+.wy-menu-vertical li.toctree-l2 a {
+  background-color: rgba(102, 51, 204, 0.66);
+}
+.wy-menu-vertical li.toctree-l2 a:hover {
+  background-color: rgba(102, 51, 204, 0.45);
+}
+.wy-menu-vertical li .toctree-l2.current > a {
+  font-weight: 500;
+  background-color: rgba(102, 51, 204, 0.45);
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3 > a {
+  color: #000000;
+  background-color: #dfdfdf;
+  padding: 0.4045em 1.618em;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3 a:hover {
+  color: #000000;
+  background-color: rgba(229, 229, 229, 0.55);
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3.current > a {
+  color: #000000;
+  background-color: rgba(229, 229, 229, 0.55);
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l4 > a {
+  padding: 0.4045em 1.618em;
+  color: #000000;
+  background-color: #fafafa;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l4 a:hover {
+  color: #000000;
+  background-color: rgba(240, 240, 240, 0.85);
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l4.current > a {
+  background-color: rgba(240, 240, 240, 0.85);
+}
 
 .wy-nav-content {
-    /* max-width: none; */
-    max-width: 1200px !important;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+}
+.wy-nav-content a {
+  color: #6633CC;
+  cursor: pointer;
 }
 
-/* Sidebar header (and topbar for mobile) */
-.wy-side-nav-search, .wy-nav-top {
-  background: #6633CC !important;
+.wy-nav-content-wrap {
+  background-color: #f5f5f5;
 }
 
-
-.wy-nav-side li a {
-  color: #6633CC !important;
+h1, h2, h3, h4, h5 {
+  color: #008000;
 }
 
-/* headerlink */
-.headerlink {
-    color: #6633CC !important;
-
+h1, h2 {
+  text-transform: uppercase;
 }
 
-.current a {
-    color: #6633CC !important;
-
+h3 {
+  border-bottom: 1px solid #008000;
+  margin-top: 30px;
 }
 
-.wy-menu-vertical li {
-    color: #6633CC !important;
-
+h4 {
+  margin-top: 25px;
 }
 
-.toctree-l1 a:hover {
-    background: #C8BCE0 !important;
-
+p {
+  font-size: 18px;
 }
 
-.toctree-l2 a:hover {
-    color: #2d3436 !important;
+.caption-text {
+  font-size: 16px;
 }
 
+.section ul li {
+  font-size: 18px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.section ol li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+em {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=custom.css.map */

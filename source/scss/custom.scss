@@ -1,0 +1,255 @@
+/* Generic typography setting for open broadcast */
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+//
+// COLORS
+////////////////////////////////
+
+$obp-white: #fafafa;
+
+$obp-grey-bright: rgba(240, 240, 240, 0.85);
+$obp-grey-light: #f5f5f5;
+$obp-grey-medium: rgba(229, 229, 229, 0.55);
+$obp-grey-dark: rgba(223, 223, 223, 1);
+
+
+$obp-black: #000000;
+
+$obp-purple-bright: rgba(102, 51, 204, 0.45);
+$obp-purple-light: rgba(102, 51, 204, 0.66);
+$obp-purple-medium: rgba(102, 51, 204, 0.79);
+$obp-purple-official: #6633CC;
+
+$obp-green-official: #00BB00;
+$obp-green-medium: #00bb73;
+
+$obp-green-dark: #008000;
+
+
+//
+// SIDE NAVIGATION
+////////////////////////////////
+
+.wy-nav-side {
+  text-transform: uppercase;
+  background-color: $obp-purple-official;
+
+  .icon-home {
+    text-transform: lowercase;
+  }
+
+  a {
+    color: $obp-white;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+//
+// SIDE NAVIGATION SEARCH FIELD
+////////////////////////////////
+
+.wy-side-nav-search {
+  background-color: $obp-purple-official;
+
+  input[type="text"] {
+    width: 100%;
+    border-radius: 0;
+    padding: 6px 12px;
+    border-color: $obp-purple-official;
+  }
+}
+
+//
+// SIDE NAVIGATION MENU
+////////////////////////////////
+
+.wy-menu-vertical {
+
+  // TOCTREE L1
+  ////////////////////////////////
+
+  li.toctree-l1 {
+    a:hover {
+      color: $obp-white;
+      background-color: $obp-purple-medium // #9B59B6;
+    }
+  }
+
+  li.toctree-l1.current {
+    > a {
+      border-bottom: none;
+      border-top: none;
+
+      font-weight: 100;
+      color: $obp-white;
+      background-color: $obp-purple-official;
+    }
+
+    a {
+      padding: .4045em 1.618em;
+
+      font-weight: 100;
+      color: $obp-white;
+      border-right: 1px solid $obp-purple-official;
+    }
+  }
+
+  // TOCTREE L2
+  ////////////////////////////////
+
+  li.toctree-l2 {
+    a {
+      background-color: $obp-purple-light;
+    }
+
+    a:hover {
+      background-color: $obp-purple-bright;
+    }
+  }
+
+  li .toctree-l2.current {
+    > a {
+      font-weight: 500;
+      background-color: $obp-purple-bright;
+
+    }
+
+    li.toctree-l3 {
+      > a {
+        color: $obp-black;
+        background-color: $obp-grey-dark;
+        padding: .4045em 1.618em;
+      }
+
+      a:hover {
+        color: $obp-black;
+        background-color: $obp-grey-medium;
+      }
+    }
+
+    li.toctree-l3.current > a {
+      color: $obp-black;
+      background-color: $obp-grey-medium;
+    }
+
+    li.toctree-l4 {
+      > a {
+        padding: .4045em 1.618em;
+
+        color: $obp-black;
+        background-color: $obp-white;
+      }
+
+      a:hover {
+        color: $obp-black;
+        background-color: $obp-grey-bright;
+      }
+    }
+
+    li.toctree-l4.current > a {
+      background-color: $obp-grey-bright;
+    }
+  }
+}
+
+
+//
+// MAIN CONTENT
+////////////////////////////////
+
+.wy-nav-content {
+  //max-width: none;
+  max-width: 1000px;
+  background-color: $obp-grey-light;
+
+  a {
+    color: $obp-purple-official;
+    cursor: pointer;
+  }
+}
+
+.wy-nav-content-wrap {
+  background-color: $obp-grey-light;
+}
+
+
+//
+// GENERIC
+////////////////////////////
+
+// HEADERS
+////////////////////////////
+
+h1, h2, h3, h4, h5 {
+  color: $obp-green-dark;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: 1px solid $obp-green-dark;
+  margin-top: 30px;
+}
+
+h4 {
+  //font-size: 110%;
+  margin-top: 25px;
+}
+
+
+// PARAGRAPH
+////////////////////
+
+p {
+  font-size: 18px;
+  //line-height: 20px;
+}
+
+
+// LISTS
+////////////////////
+
+// CAPTION TEXT
+////////////////////
+
+.caption-text {
+  font-size: 16px;
+}
+
+
+.section {
+  ul li {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+
+  }
+
+  ol li {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+}
+
+// image
+//----------------------------------
+
+img {
+  //border: 1px solid lightgray;
+}
+
+// italic text
+//----------------------------------
+
+em {
+  font-size: 14px;
+}
