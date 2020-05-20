@@ -13,6 +13,7 @@ UNDER CONSTRUCTION
 Users list
 **********
 
+UNDER CONSTRUCTION
 
 
 .. _user-profile:
@@ -21,6 +22,7 @@ Users list
 User profile
 ************
 
+UNDER CONSTRUCTION
 
 
 .. _user-form:
@@ -29,8 +31,13 @@ User profile
 User form
 ************
 
+UNDER CONSTRUCTION
+
+
 .. _user-invitation:
 
 **************
 Inviting users
 **************
+
+UNDER CONSTRUCTION

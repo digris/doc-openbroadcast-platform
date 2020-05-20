@@ -6,9 +6,5 @@ Download
 
 UNDER CONSTRUCTION
 
-*********
-How to
-*********
-
 
 

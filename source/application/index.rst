@@ -3,7 +3,7 @@ open broadcast platform
 ===================================================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
 
     users/index
     stations/index
@@ -13,8 +13,4 @@ open broadcast platform
     upload/index
     download/index
     scheduler/index
-    about/index
-
-
-
-
+    popup-player/index

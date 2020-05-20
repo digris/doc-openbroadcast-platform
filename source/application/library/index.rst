@@ -18,12 +18,12 @@ To start browsing the library, open the **CONTENT** menu and click on **LIBRARY*
 
 By default it display the list of **Releases**, to change it, click on a different entity using the page navigation menu.
 
-.. figure:: img/library-nav-entities.png
+.. figure:: img/library-page-nav-menu.png
 
 The library includes:
 
 * :ref:`Releases: <release>` The releases the recordings (tracks) appear on.
-* :ref:`Artists: <artist>` The artist/s the tracks and releases are credited to.
+* :ref:`Artists: <artist>` The artist(s) the tracks and releases are credited to.
 * :ref:`Tracks <track>` The tracks themselves.
 * :ref:`Labels: <label>` The labels the releases are issued on.
 
@@ -74,8 +74,8 @@ To sort it differently, click on **Ordering** and then on a different options:
 
 * :ref:`Name: <release-form-title>` The title of the release.
 * :ref:`Release date: <release-form-date>` The date the release was officially issued.
-* Last Modified: The last date the release profile was edited.
-* Creation date: The date the release profile was created.
+* **Last Modified**: The last date the release profile was edited.
+* **Creation date**: The date the release profile was created.
 
 
 .. _release-list-filter:
@@ -85,11 +85,11 @@ Filtering the list
 
 The list of releases can be filtered using the tags or some fields associated to the release.
 
-To filter by tags, click on **TAGS** and select one or more tag/s from the list.
+To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
 
 .. figure:: img/release-list-tags.png
 
-To filter by a specific field, use the apposite **Filters** located on the right side of the page,
+To filter by a specific field, use the **Filters** located on the right side of the page,
 
 .. figure:: img/release-list-filters.png
 
@@ -102,7 +102,7 @@ The available filters are:
 
 .. note::
 
-  **TAGS** and **Filters** also work in combination. To reset the result-set, Click again on the active tag/s or filter/s.
+  **TAGS** and **Filters** also work in combination. To reset the result-set, Click again on the active tag(s) or filter(s).
 
 .. figure:: img/release-list-tags-filters.png
 
@@ -114,38 +114,39 @@ The available filters are:
 The Release card
 -----------------
 
-The release card display some information for the release and it includes functions to interact with.
+The release card is the way the release appears in the list. It displays some information of the release and it includes
+some functions to interact with.
 
 .. figure:: img/release-list-card.png
-
-To play its content, move the cursor over the Cover art and click on the 'Play' icon. The :ref:`popup player <popup-player>`
-opens automatically and starts play the content. Be sure the browser permissions are set to 'Autoplay' else click again
-on the 'Play' button displayed in the player.
-
-.. figure:: img/release-list-card-play.png
-
-To access additional options, click on 'more options' icon (3 dots), then select one of the available functions.
-
-.. figure:: img/release-list-card-options.png
-
-The functions are:
-
-* **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
-* **Download**: Download the entire release.
-* **Edit**: Open the :ref:`edit form <release-form>` for the release.
-* **Admin view**: *(Admin only)*.
 
 Starting from the top, the information displayed are:
 
 * :ref:`Release country: <release-form-country>` The country the release was issued in.
 * :ref:`Release date: <release-form-date>` The date the release was officially issued.
 * :ref:`Cover art: <release-form-cover-art>` the cover art of the release.
+* :ref:`Tags: <release-form-tags>` The tags associated to the release.
 * :ref:`Release title: <release-form-title>` The title of the release
 * :ref:`Artist: <release-form-album-artist>` The name of the artist the release is credited to.
 * :ref:`Label: <label>` The name of label the release was issued on.
-* Track count: The number of tracks available for the release / the total number.
-* User name: The user who created the release profile.
-* Creation date: The date the release profile was created.
+* **Track count**: The number of tracks available for the release / the total number.
+* **User name**: The name of the user who created the release profile.
+* **Creation date**: The date the release profile was created.
+
+To play the release, move the cursor over the Cover art and click on the 'Play' icon. The :ref:`popup player <popup-player>`
+opens automatically and start playing it.
+
+.. figure:: img/release-list-card-play.png
+
+To access additional options, click on **more options** (3 dots), then select one of the available options.
+
+.. figure:: img/release-list-card-options.png
+
+The options are:
+
+* **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
+* **Download**: Download the entire release.
+* **Edit**: Open the :ref:`edit form <release-form>` for the release.
+* **Admin view**: *(Admin only)*.
 
 .. note::
 
@@ -160,7 +161,7 @@ Starting from the top, the information displayed are:
 Actions on selection
 --------------------
 
-To select one or more release/s, move the cursor over the card (below the image) and click on it.
+To select one or more release(s), move the cursor over the card (below the image) and click on it.
 
 .. figure:: img/release-list-selection.gif
 
@@ -168,8 +169,8 @@ To select one or more release/s, move the cursor over the card (below the image)
 
 The available actions are:
 
-* **Download selection:** Download the selected items *(Radio pro only)*.
-* **Merge selection:** Merge the selected items *(Admin only)*.
+* **Download selection**: Download the selected items *(Radio pro only)*.
+* **Merge selection**: Merge the selected items *(Admin only)*.
 
 
 
@@ -187,7 +188,8 @@ UNDER CONSTRUCTION
 Release form
 ============
 
-The release form allows to add or change information for a release.
+The release form allows to edit the release information.
+
 
 After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
 reset the form.
@@ -241,7 +243,7 @@ albums that are released separately for promotional uses such as digital downloa
 expected to be the most popular.
 *(From the Wikipedia article* |wk-single|_ *, which is released under the* |wk-license|_ *).*
 
-.. _wk-single: https://en.wikipedia.org/wiki/Single_(music)
+.. _wk-single: https://en.wikipedia.org/wiki(s)ingle_(music)
 .. |wk-single| replace:: *Single*
 
 **EP**
@@ -269,7 +271,7 @@ A soundtrack album is any album that incorporates music directly recorded from t
 film or television show.
 *(From the Wikipedia article* |wk-soundtrack-album|_ *, which is released under the* |wk-license|_ *).*
 
-.. _wk-soundtrack-album: https://en.wikipedia.org/wiki/Soundtrack_album
+.. _wk-soundtrack-album: https://en.wikipedia.org/wiki(s)oundtrack_album
 .. |wk-soundtrack-album| replace:: *Soundtrack album*
 
 **Audiobook**
@@ -287,7 +289,7 @@ featuring music or songs, the content of spoken word albums include political sp
 documents, dialogue from a film soundtrack, dramatized versions of literary classics, stories for children, and comedic
 material. *(From the Wikipedia article* |wk-spoken-word-album|_ *, which is released under the* |wk-license|_ *).*
 
-.. _wk-spoken-word-album: https://en.wikipedia.org/wiki/Spoken_word_album
+.. _wk-spoken-word-album: https://en.wikipedia.org/wiki(s)poken_word_album
 .. |wk-spoken-word-album| replace:: *Spoken word album*
 
 **Interview**
@@ -491,7 +493,7 @@ There are many different types of barcode, but the ones usually found on music r
 Tags
 ----
 
-One or more keyword/s to help/s describe the release (i.e. the music genre / style).
+One or more keyword(s) to help describe the release (i.e. the music genre / style).
 
 .. figure:: img/release-form-tags.png
 
@@ -573,8 +575,8 @@ To sort it differently, click on **Ordering** and then on a different options:
 * :ref:`Name: <artist-form-artist-name>` The name of the artist.
 * :ref:`Date of formation / date of birth: <artist-form-begin-date>` The date a group formed / a person was born.
 * :ref:`Date of breakup / date of death: <artist-form-end-date>` The date a group dissolved / a person died.
-* Last Modified: The last date an artist profile was edited.
-* Creation date: The date an artist profile was created.
+* **Last Modified**: The last date an artist profile was edited.
+* **Creation date**: The date an artist profile was created.
 
 
 .. _artist-list-filter:
@@ -584,11 +586,11 @@ Filtering the list
 
 The list of artists can be filtered using the tags or some fields associated to the artist.
 
-To filter by tags, click on **TAGS** and select one or more tag/s from the list.
+To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
 
 .. figure:: img/artist-list-tags.png
 
-To filter by a specific field, use the apposite **Filters** located on the right side of the page,
+To filter by a specific field, use the **Filters** located on the right side of the page,
 
 .. figure:: img/artist-list-filters.png
 
@@ -597,7 +599,10 @@ The available filters are:
 * :ref:`Country: <artist-form-country>` The country a person was born / a band formed.
 * :ref:`Type: <artist-form-type>` The type of artist.
 
+.. _artist-list-card:
 
+The Artist card
+----------------
 
 .. _artist-profile:
 
@@ -613,7 +618,8 @@ UNDER CONSTRUCTION
 Artist form
 ===========
 
-The artist form allows to add or change information for an artist.
+The artist form allows to edit the artist information.
+
 
 After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
 reset the form.
@@ -703,7 +709,7 @@ A valid e-mail address for booking inquires.
 Aliases
 --------
 
-Other name/s the artist uses to differentiate its work.
+Other name(s) the artist uses to differentiate its work.
 
 .. figure:: img/artist-form-aliases.png
 
@@ -825,7 +831,7 @@ browser.
 Tags
 ----
 
-One or more keyword/s to help/s describe the artist(i.e. the music genre, instruments, profession).
+One or more keyword(s) to help describe the artist(i.e. the music genre, instruments, profession).
 
 .. figure:: img/artist-form-tags.png
 
@@ -857,8 +863,8 @@ The url of the artist page on other online platforms.
 Tracks
 **********
 
-A track is the way a recording appears in a particular :ref:`release <release>` or, more exactly, in a particular tracklist.
-Every track has a title and is credited to one or more artists.
+A track is the way a recording appears on a particular :ref:`release <release>` or, more exactly, on a particular tracklist.
+Every track has a title and is credited to one or more :ref:`artist(s) <artist>`.
 *(From the Musicbrainz article* |mb-track|_ *, which is released under the* |mb-license|_ *).*
 
 .. |mb-track| replace:: *Track*
@@ -885,11 +891,11 @@ To sort it differently, click on **Ordering** and then on a different options:
 
 * :ref:`Name: <track-form-title>` The title of the track.
 * :ref:`Artist name: <track-form-primary-artist>` The name of the artist(s) the track is credited to.
-* Duration: The duration of the track.
-* Num Emissions: The number of times the track was played on-air (airplay).
-* Last Emission: The last date the track was played on-air.
-* Last Modified: The last date the track profile was edited.
-* Creation date: The date the track profile was created.
+* Duration**: The duration of the track.
+* **Num Emissions**: The number of times the track was played on-air (airplay).
+* **Last Emission**: The last date the track was played on-air.
+* **Last Modified**: The last date the track profile was edited.
+* **Creation date**: The date the track profile was created.
 
 
 
@@ -900,11 +906,11 @@ Filtering the list
 
 The list of tracks can be filtered using the tags or some fields associated to the track.
 
-To filter by tags, click on **TAGS** and select one or more tag/s from the list.
+To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
 
 .. figure:: img/track-list-tags.png
 
-To filter by a specific field, use the apposite **Filters** located on the right side of the page,
+To filter by a specific field, use the **Filters** located on the right side of the page,
 
 .. figure:: img/track-list-filters.png
 
@@ -912,15 +918,18 @@ The available filters are:
 
 * :ref:`Type: <track-form-type>` The type of track.
 * :ref:`Version: <track-form-version>` The version of the track.
-* Num Emissions: The number of times the track was played on-air (airplay).
-* Last Emission: The last date the track was played on-air.
-* Bitrate: The bitrate property of the file associated to the track.
-* Samplerate: The samplerate property of the file associated to the track.
-* Encoding: The audio encoder property of the file associated to the track.
+* **Num Emissions**: The number of times the track was played on-air (airplay).
+* **Last Emission**: The last date the track was played on-air.
+* **Bitrate**: The bitrate property of the file associated to the track.
+* **Samplerate**: The samplerate property of the file associated to the track.
+* **Encoding**: The audio encoder property of the file associated to the track.
 * :ref:`License: <track-form-license>` The license applied to a track.
 * :ref:`Lyrics Language: <track-form-lyrics-language>` The language of the lyrics.
 
+.. _track-list-card:
 
+The Track card
+--------------
 
 .. _track-profile:
 
@@ -936,7 +945,8 @@ UNDER CONSTRUCTION
 Track form
 ===========
 
-The track form allows to add or change information for a track.
+The track form allows to edit the track information.
+
 
 After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
 reset the form.
@@ -1211,7 +1221,7 @@ The words that make up a song.
 Tags
 ----
 
-One or more keyword/s to help/s describe the track (i.e. the music genre / style).
+One or more keyword(s) to help describe the track (i.e. the music genre / style).
 
 .. figure:: img/track-form-tags.png
 
@@ -1271,8 +1281,8 @@ on the top-left side of the list / page.
 
 To sort it differently, click on **Ordering** and then on a different options:
 
-* **Creation date:** The date the label profile was created.
-* **Modification date:** The last date a label profile was edited.
+* **Creation date**: The date the label profile was created.
+* **Modification date**: The last date a label profile was edited.
 * :ref:`Name: <label-form-name>` The name of the label.
 
 
@@ -1283,11 +1293,11 @@ Filtering the list
 
 The list of labels can be filtered using the tags or some fields associated to the label.
 
-To filter by tags, click on **TAGS** and select one or more tag/s from the list.
+To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
 
 .. figure:: img/label-list-tags.png
 
-To filter by a specific field, use the apposite **Filters** located on the right side of the page,
+To filter by a specific field, use the **Filters** located on the right side of the page,
 
 .. figure:: img/label-list-filters.png
 
@@ -1296,6 +1306,11 @@ The available filters are:
 * :ref:`Country: <label-form-country>` The country the label was created.
 * :ref:`Type: <label-form-type>` The type of label.
 * :ref:`Established: <label-form-life-start>` The year the label was established.
+
+.. _label-list-card:
+
+The Label card
+--------------
 
 
 .. _label-profile:
@@ -1312,7 +1327,7 @@ UNDER CONSTRUCTION
 Label form
 ===========
 
-The label form allows to add or change information for a label.
+The label form allows to edit the label information.
 
 .. _label-form-general:
 
@@ -1341,6 +1356,10 @@ The type is unknown.
 
 **Major label**
 
+The Association of Independent Music (AIM) defines a 'major' as "a multinational company which (together with the
+companies in its group) has more than 5% of the world market(s) for the sale of records or music videos." As of 2012,
+there are only three labels that can be referred to as "major labels" (Universal Music Group, Sony Music Entertainment,
+and Warner Music Group).
 *(From the Wikipedia article* |wk-record-label-major-labels|_ *, which is released under the* |wk-license|_ *).*
 
 .. |wk-record-label-major-labels| replace:: *Record label - Major labels*
@@ -1495,7 +1514,7 @@ The logo of the label. To upload an image, click on **Browse** and select a pict
 Tags
 ----
 
-One or more keyword/s to help/s describe the label (i.e. the music genre / style).
+One or more keyword(s) to help describe the label (i.e. the music genre / style).
 
 .. figure:: img/label-form-tags.png
 

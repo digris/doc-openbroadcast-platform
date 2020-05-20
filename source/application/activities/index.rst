@@ -1,66 +1,66 @@
 .. _activities:
 
-***************
+##########
 Activities
-***************
+##########
 
-'Activities' are the actions done by the users on the platform.
+The 'Activities' are the actions performed by the :ref:`users <user>` on the platform.
 
 .. _activities-list:
 
-Activity list
-===============
+***************
+Activities list
+***************
 
 To access the list of activities, open the **NETWORK** menu and click on **ACTIVITIES**.
 
 .. figure:: img/network-sub-nav-activities.png
 
+By default, the list is sorted by date, the newest activity is displayed on top of the list.
+
+
 Filtering the list
-------------------
+==================
 
-By default, the list is sorted by **Creation date** (descending), the newest activity is displayed on top of the list.
-
-To filter the content, click on a 'Filter' located on the right side of the page and then on a sub-value.
+The list of activities can be filtered using the **Filters** located on the right side of the page,
 
 .. figure:: img/activities-list-filters.png
 
-   Example: List activities done by users on **label** profiles only.
+   Example: Show all actions performed on the **label** profiles only.
 
-Click on the active filter (green highlighted) to deselect it (it reset the result-set).
-
-Below the complete list of filters available for the Activities.
+To reset the result-set, click on the active option / filter to deselect it.
 
 
 Filter: Verb
-^^^^^^^^^^^^
+------------
 
-**Verb** indicate the type of activity done by a user.
+The type of action performed by the user.
 
-The sub-values are:
+The options are:
 
-* **Added:** A user added / created a profile in the library.
-* **Download:** A user downloaded content.
-* **Merged To:** A user merged two or more profiles together *(Advanced editor only)*.
-* **Rescheduled:** A user re-scheduled a playlist.
-* **Scheduled:** A user scheduled a playlist for the first time.
-* **Started Following:** A user started to follow a profile.
-* **Stream:** A user played a track in the library.
-* **Updated:** A user updated a profile in the library.
+* **Added**: The user added / created a profile in the library.
+* **Download**: The user downloaded content.
+* **Merged To**: The user merged two or more profiles *(Advanced editor only)*.
+* **Rescheduled**: The user re-scheduled a playlist.
+* **Scheduled**: The user scheduled a playlist for the first time.
+* **Started Following**: The user started to follow a profile.
+* **Stream**: The user played a track.
+* **Updated**: The user updated a profile.
 
 Filter: Target content type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
-**Target content type** indicate the content on which the action was done.
+The content the action was performed on.
 
-The sub-values are:
+The options are:
 
-* **User:** A :ref:`User <user>` of the platform.
-* **Playlist:** A :ref:`Playlist <playlist>` on the platform.
-* **Track:** A :ref:`Track <track>` in the library.
-* **Label:** A :ref:`Label <label>` in the library.
-* **Release:** A :ref:`Release <release>` in the library.
-* **Artist:** An :ref:`Artist <artist>` in the library.
-* **Station:** A :ref:`Radio station <station>` on the platform.
+* **User**: The :ref:`User <user>` of the platform.
+* **Playlist**: The :ref:`Playlist <playlist>` on the platform.
+* **Track**: The :ref:`Track <track>` in the library.
+* **Label**: The :ref:`Label <label>` in the library.
+* **Release**: The :ref:`Release <release>` in the library.
+* **Artist**: The :ref:`Artist <artist>` in the library.
+* **Station**: The :ref:`Radio station <station>` on the platform.
 
 
 
