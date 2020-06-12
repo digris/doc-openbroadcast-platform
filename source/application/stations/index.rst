@@ -1,33 +1,30 @@
 .. _station:
 
-##############
+########
 Stations
-##############
+########
+
+.. _station-introduction:
+
+**************
+Introduction
+**************
 
 UNDER CONSTRUCTION
 
 .. _station-list:
 
-**************
-Stations list
-**************
+*********
+List view
+*********
 
 UNDER CONSTRUCTION
 
 
 .. _station-profile:
 
-****************
-Station profile
-****************
-
-UNDER CONSTRUCTION
-
-
-.. _station-form:
-
-**************
-Station form
-**************
+***********
+Detail view
+***********
 
 UNDER CONSTRUCTION

@@ -20,3 +20,12 @@ UNDER CONSTRUCTION
 
 
 Be sure the browser permissions are set to 'Autoplay' else click again on the 'Play' button within it.
+
+
+.. _popup-player-add-track-to-playlist:
+
+**************************
+Adding tracks to playlists
+**************************
+
+UNDER CONSTRUCTION

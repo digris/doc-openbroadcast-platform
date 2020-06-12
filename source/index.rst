@@ -14,5 +14,5 @@ Welcome to open broadcast platform's documentation
 Quick links
 ==================
 
-* :ref:`UPLOADING AND IMPORTING FILES IN THE LIBRARY <new-upload>`.
-* :ref:`SCHEDULING / UN-SCHEDULING AN EMISSION <scheduler-schedule-playlist>`.
+* :ref:`UPLOADING AND IMPORTING FILES IN THE LIBRARY <upload-new-upload-upload-file>`.
+* :ref:`SCHEDULING A PLAYLIST <scheduler-how-to-schedule-playlist>`.

@@ -4,13 +4,24 @@
 Activities
 ##########
 
-The 'Activities' are the actions performed by the :ref:`users <user>` on the platform.
+
+.. _activities-introduction:
+
+************
+Introduction
+************
+
+'Activities' are the actions performed by the :ref:`users <user>` on the platform.
 
 .. _activities-list:
 
 ***************
 Activities list
 ***************
+
+
+Accessing the list
+==================
 
 To access the list of activities, open the **NETWORK** menu and click on **ACTIVITIES**.
 
@@ -22,7 +33,9 @@ By default, the list is sorted by date, the newest activity is displayed on top 
 Filtering the list
 ==================
 
-The list of activities can be filtered using the **Filters** located on the right side of the page,
+The list of activities can be filtered using the **Filters** located on the right side of the page.
+
+Click on **Filter:<property>** to open the menu and click on one of the available options.
 
 .. figure:: img/activities-list-filters.png
 
@@ -30,13 +43,15 @@ The list of activities can be filtered using the **Filters** located on the righ
 
 To reset the result-set, click on the active option / filter to deselect it.
 
+The available filters are:
+
+* **Verb**: The type of action.
+* **Target content type**: The content the action was performed on.
+
 
 Filter: Verb
 ------------
-
-The type of action performed by the user.
-
-The options are:
+The available options are:
 
 * **Added**: The user added / created a profile in the library.
 * **Download**: The user downloaded content.
@@ -50,9 +65,7 @@ The options are:
 Filter: Target content type
 ---------------------------
 
-The content the action was performed on.
-
-The options are:
+The available options are:
 
 * **User**: The :ref:`User <user>` of the platform.
 * **Playlist**: The :ref:`Playlist <playlist>` on the platform.

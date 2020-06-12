@@ -9,24 +9,30 @@
 Library
 ##############
 
+
+.. _library-introduction:
+
+************
+Introduction
+************
+
 As the place of media production, the platform connects a high quality work environment with a comprehensive music
 library.
+
+The library includes:
+
+* :ref:`Releases: <release>` The releases the tracks appear on.
+* :ref:`Artists: <artist>` The artists the tracks and releases are credited to.
+* :ref:`Tracks <track>` The way recordings appear on releases.
+* :ref:`Labels: <label>` The labels the releases are issued on.
 
 To start browsing the library, open the **CONTENT** menu and click on **LIBRARY**.
 
 .. figure:: img/content-sub-nav-library.png
 
-By default it display the list of **Releases**, to change it, click on a different entity using the page navigation menu.
+Use the page navigation menu to change the profiles you want to display.
 
 .. figure:: img/library-page-nav-menu.png
-
-The library includes:
-
-* :ref:`Releases: <release>` The releases the recordings (tracks) appear on.
-* :ref:`Artists: <artist>` The artist(s) the tracks and releases are credited to.
-* :ref:`Tracks <track>` The tracks themselves.
-* :ref:`Labels: <label>` The labels the releases are issued on.
-
 
 
 .. _release:
@@ -34,6 +40,12 @@ The library includes:
 *********
 Releases
 *********
+
+
+.. _release-overview:
+
+Overview
+========
 
 In the music industry, a release usually is a creative output from an artist, available for sale or distribution; a
 broad term covering the many different formats music can be released in, and different forms of pieces (singles, albums,
@@ -53,27 +65,33 @@ such as the country, label, barcode and packaging.
 .. |mb-release| replace:: *Release*
 .. _mb-release: https://musicbrainz.org/doc/Release
 
-Visit the :ref:`Release form <release-form>` to see which information open broadcast collect for a release.
+Visit the :ref:`form view <release-form>` to see which information open broadcast collect for a release.
 
 
 .. _release-list:
 
-Release list
-=============
+List view
+=========
 
 To access the list of releases, open the **CONTENT** menu, click on **LIBRARY** and then on **RELEASES**.
+
+.. figure:: img/library-page-nav-menu-releases.png
 
 By default the list is sorted by **Creation date** (descending), the newly created profile is displayed on the top-left
 side of the list.
 
-.. figure:: img/release-list-order.png
+.. figure:: img/release-list-order-by-creation-date.png
 
-   Click on the active / highlighted option to change the sorting order from 'descending' to 'ascending' (DESC/ASC).
+To change the ordering parameter, click on **Ordering** to open the menu and click on a different option.
 
-To sort it differently, click on **Ordering** and then on a different options:
+.. figure:: img/release-list-order-by-name.png
+
+  Click again on the active option to reverse the sorting order from 'descending' to 'ascending' (DESC/ASC).
+
+The available options are:
 
 * :ref:`Name: <release-form-title>` The title of the release.
-* :ref:`Release date: <release-form-date>` The date the release was officially issued.
+* :ref:`Release date: <release-form-release-date>` The date the release was officially issued.
 * **Last Modified**: The last date the release profile was edited.
 * **Creation date**: The date the release profile was created.
 
@@ -81,48 +99,52 @@ To sort it differently, click on **Ordering** and then on a different options:
 .. _release-list-filter:
 
 Filtering the list
-------------------------------
+-------------------
 
-The list of releases can be filtered using the tags or some fields associated to the release.
+The list can be filtered by tags or specific properties associated with the releases.
 
-To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
+**Tags**
 
-.. figure:: img/release-list-tags.png
+Click on **TAGS** to open the menu and click on the tag(s).
 
-To filter by a specific field, use the **Filters** located on the right side of the page,
+  .. figure:: img/release-list-tags.png
+
+**Specific property**
+
+Click on **Filter:<property>** to open the menu and click on one of the available options.
 
 .. figure:: img/release-list-filters.png
 
 The available filters are:
 
-* :ref:`Release date: <release-form-date>` The date the release was officially issued.
+* :ref:`Release date: <release-form-release-date>` The date the release was officially issued.
 * :ref:`Release type: <release-form-type>` The type of release.
 * :ref:`Release country: <release-form-country>` The country the release was issued in.
 * :ref:`Label type: <label-form-type>` The type of label the release was issued on.
 
-.. note::
-
-  **TAGS** and **Filters** also work in combination. To reset the result-set, Click again on the active tag(s) or filter(s).
+Tags and filters also work in combination:
 
 .. figure:: img/release-list-tags-filters.png
 
    Example: Show all **ELECTRONIC** and **ACID JAZZ** **Album** releases sorted by **Creation date**.
 
+Click again on any active tag or filter to deselect it and reset the result-set.
+
 
 .. _release-list-card:
 
 The Release card
------------------
+----------------
 
 The release card is the way the release appears in the list. It displays some information of the release and it includes
-some functions to interact with.
+some functions that can be performed on the release.
 
 .. figure:: img/release-list-card.png
 
-Starting from the top, the information displayed are:
+Starting at the top, the information displayed are:
 
 * :ref:`Release country: <release-form-country>` The country the release was issued in.
-* :ref:`Release date: <release-form-date>` The date the release was officially issued.
+* :ref:`Release date: <release-form-release-date>` The date the release was officially issued.
 * :ref:`Cover art: <release-form-cover-art>` the cover art of the release.
 * :ref:`Tags: <release-form-tags>` The tags associated to the release.
 * :ref:`Release title: <release-form-title>` The title of the release
@@ -132,20 +154,21 @@ Starting from the top, the information displayed are:
 * **User name**: The name of the user who created the release profile.
 * **Creation date**: The date the release profile was created.
 
-To play the release, move the cursor over the Cover art and click on the 'Play' icon. The :ref:`popup player <popup-player>`
-opens automatically and start playing it.
+To play the release, move the cursor over the Cover art and click on the 'Play' icon.
 
 .. figure:: img/release-list-card-play.png
 
-To access additional options, click on **more options** (3 dots), then select one of the available options.
+   The :ref:`popup player <popup-player>` opens and starts playing it automatically
+
+To access additional options, click on **more options** (3 dots) to open the menu and then click on an option.
 
 .. figure:: img/release-list-card-options.png
 
-The options are:
+The available options are:
 
 * **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
 * **Download**: Download the entire release.
-* **Edit**: Open the :ref:`edit form <release-form>` for the release.
+* **Edit**: Open the :ref:`form view <release-form>` of the release.
 * **Admin view**: *(Admin only)*.
 
 .. note::
@@ -173,26 +196,96 @@ The available actions are:
 * **Merge selection**: Merge the selected items *(Admin only)*.
 
 
+.. _release-detail:
 
-.. _release-profile:
+Detail view
+===========
 
-Release profile
-===============
+To open the detail view of a release, go to the :ref:`releases list <release-list>` page and click on the title of
+the release.
 
-UNDER CONSTRUCTION
+.. figure:: img/release-list-open-detail-view.png
 
+.. figure:: img/release-detail-overview.png
+
+The detail view displays all information associated with the release. Starting at the top, the information are:
+
+* **Heading**: The :ref:`title <release-form-title>` / :ref:`type <release-form-type>`
+  (the :ref:`country <release-form-country>` the release was issued in).
+* :ref:`Artist <release-form-album-artist>`: The artist(s) the release is credited to.
+* :ref:`Label <release-form-label>`: The label the release was issued on.
+* :ref:`Catalog No <release-form-catalog-number>`: The label the release was issued on.
+* :ref:`Release date <release-form-release-date>`: The date the release was officially issued.
+* :ref:`License <track-form-license>`: The license applied to the tracks on the release.
+* **Date created**: The date the release profile was created / the :ref:`user <user>` who created the profile.
+* **Last Updated**: The last date the release profile was edited / The last :ref:`user <user>` who edited the profile.
+* :ref:`Tags <release-form-tags>`: The tags of the release.
+* :ref:`Cover art <release-form-cover-art>` (right side): The cover art of the release.
+* **Thumb up / thumb down** (right side): The rating tool.
+
+Trackslist tab
+--------------
+
+The tracks list of the release.
+
+.. figure:: img/release-detail-tab-trackslist.png
+
+Statistics tab
+--------------
+
+The tracks usage statistics.
+
+.. figure:: img/release-detail-tab-statistics.png
+
+On the right side of the page are available the following options:
+
+* :ref:`Edit <release-form>`: Open the form to edit the information of the release.
+* **Administration view**: *(Admin only)*.
+* **Follow release**: Start to follow the release.
+* **Download release**: *(Radio Pro only)*.
+* **Download selection**: *(Radio Pro only)*.
+* **Merge selection**: *(Admin only)*.
+* **Re-assign selection**: *(Admin only)*.
+
+Below the options are listed the url(s) of the release page on other online platforms.
 
 
 .. _release-form:
 
-Release form
-============
+Form view
+=========
 
-The release form allows to edit the release information.
+To open the form view of a release, go to the :ref:`release detail <release-detail>` page and click on **Edit**
 
+.. figure:: img/release-detail-sidebar-edit.png
 
-After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
-reset the form.
+Or from the :ref:`releases list <release-list>`:
+
+.. figure:: img/release-list-card-options-edit.png
+
+  Click on **more options** (3 dots) to open the menu and then click on **Edit**.
+
+.. figure:: img/release-form-overview.png
+
+  After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
+  reset the form.
+
+The form view allows to edit the information of the release.
+
+On the top side of the form are displayed the current information of the release (as displayed in the
+:ref:`detail view <release-detail>`).
+
+On the right side of the page are available the following options:
+
+* **Back to detail view**: Exit the form and return to the detail view.
+* **Administration view**: *(Admin only)*.
+
+A comparison tool is available to help complete the information:
+
+* **Compare - Discogs**: Search for matches in the `Discogs <https://www.discogs.com/>`__ database and retrieve the
+  information from it.
+* **Compare - Musicbrainz**: Search for matches in the `Musicbrainz <https://musicbrainz.org/>`__ database and retrieve
+  the information from it.
 
 Below are described the information open broadcast collect for a release.
 
@@ -206,12 +299,14 @@ General
 
   Mandatory fields are marked with ***** and cannot be omitted.
 
+
 .. _release-form-title:
 
 Name
-^^^^^
+^^^^
 
 The official title of the release. It can be found in the cover art, promo sheet or on reliable online sources.
+
 
 .. _release-form-type:
 
@@ -355,12 +450,14 @@ releases published for profit in the 2010s; in this context, a mixtape is compar
 
 Any release that does not fit in any of the categories above.
 
+
 .. _release-form-total-tracks:
 
 Total tracks
 ^^^^^^^^^^^^
 
 The total number of tracks on the release.
+
 
 .. _release-form-album-artist:
 
@@ -371,22 +468,25 @@ The artist(s) the release is primarily credited to.
 
 .. figure:: img/release-form-album-artist.png
 
-  The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
-
 By default the system display the name of the artist the tracks on the release are credited to. If the tracks are
 credited to multiple artists (i.e. a compilation) 'Various artists' will be displayed instead.
 
 To override the default value, type the artist name inside the first field. To combine multiple artists / names, type
 the names in separated fields and select the 'join phrase' to be used in between.
 
-Typing inside the 'Album artists' field activates the auto-completion, listing all profiles in the library whose name
-matches the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Album artists' field activates the auto-completion, listing all profiles in the library whose name
+  matches the current text typed in.
 
-.. figure:: img/album-artist-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/release-form-album-artist-select-create.gif
+
+    The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
 
   To remove an artist click on the respective 'Delete' check-box and save the form.
+
 
 .. _release-form-meta:
 
@@ -395,12 +495,14 @@ Meta
 
 .. figure:: img/release-form-meta.png
 
+
 .. _release-form-description:
 
 Description
-^^^^^^^^^^^^
+^^^^^^^^^^^
 
 The description of the release.
+
 
 .. _release-form-cover-art:
 
@@ -409,12 +511,14 @@ Main image
 
 The cover art of the release. To upload an image, click on **Browse** and select a picture from the computer file browser.
 
+
 .. _release-form-label-catalog:
 
 Label / Catalog
 ---------------
 
 .. figure:: img/release-form-label-catalog.png
+
 
 .. _release-form-label:
 
@@ -423,15 +527,18 @@ Label
 
 The name of the label the release was issued on.
 
-Typing inside the 'Label' field activates the auto-completion, listing all profiles in the library whose name matches
-the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Label' field activates the auto-completion, listing all profiles in the library whose name matches
+  the current text typed in.
 
-.. figure:: img/label-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/release-form-label-select-create.gif
 
 Click on **[unknown]** if the information is not available or on **Not on Label / Self Released** if the release is
 not issued on a label or it is released by the artist itself.
+
 
 .. _release-form-catalog-number:
 
@@ -440,6 +547,7 @@ Catalog number
 
 The catalog number the label assigned to the release.
 
+
 .. _release-form-country:
 
 Release country
@@ -447,12 +555,14 @@ Release country
 
 The country the release was issued in.
 
-.. _release-form-date:
+
+.. _release-form-release-date:
 
 Release date
 ^^^^^^^^^^^^
 
 The date the release was officially issued.
+
 
 .. _release-form-identifiers:
 
@@ -462,6 +572,7 @@ Identifiers
 The identification code associated to the release.
 
 .. figure:: img/release-form-identifiers.png
+
 
 .. _release-form-barcode:
 
@@ -488,6 +599,7 @@ There are many different types of barcode, but the ones usually found on music r
 .. |mb-barcode| replace:: *Barcode*
 .. _mb-barcode: https://musicbrainz.org/doc/Barcode
 
+
 .. _release-form-tags:
 
 Tags
@@ -497,14 +609,16 @@ One or more keyword(s) to help describe the release (i.e. the music genre / styl
 
 .. figure:: img/release-form-tags.png
 
-Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches the
-current text typed in.
+.. note::
 
-Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches the
+  current text typed in.
 
-.. figure:: img/tags-field-select-create-remove.gif
+  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
 
-  To remove a tag click on the 'X' within it.
+  .. figure:: img/tags-field-select-create-remove.gif
+
+    To remove a tag click on the 'X' within it.
 
 
 .. _release-form-relations:
@@ -514,10 +628,9 @@ Relations
 
 The url of the release page on other online platforms.
 
-
 .. figure:: img/release-form-relations.png
 
-  To remove a url / link click on the respective 'Delete' check-box and save the form.
+To remove a url / link click on the respective 'Delete' check-box and save the form.
 
 
 .. _release-form-tracks-list:
@@ -538,12 +651,16 @@ Tracks list
 UNDER CONSTRUCTION
 
 
-
 .. _artist:
 
-**********
+*******
 Artists
-**********
+*******
+
+.. _artist-overview:
+
+Overview
+========
 
 An artist is generally a musician (or musician persona), group of musicians, or other music professional
 (like a producer or engineer). Occasionally, it can also be a non-musical person (like a photographer, an illustrator,
@@ -558,19 +675,25 @@ Visit the :ref:`Artist form <artist-form>` to see which information open broadca
 
 .. _artist-list:
 
-Artists list
-============
+List view
+=========
 
 To access the list of artists, open the **CONTENT** menu, click on **LIBRARY** and then on **ARTISTS**.
 
-By default, the list is sorted by **Creation date** (descending). The newly created profile is displayed on the top-left
+.. figure:: img/library-page-nav-menu-artists.png
+
+By default the list is sorted by **Creation date** (descending). The newly created profile is displayed on the top-left
 side of the list.
 
-.. figure:: img/artist-list-order.png
+.. figure:: img/artist-list-order-by-creation-date.png
 
-  Click on the active / highlighted option to change the sorting order from ‘descending’ to ‘ascending’ (DESC/ASC).
+To change the ordering parameter, click on **Ordering** to open the menu and click on a different option.
 
-To sort it differently, click on **Ordering** and then on a different options:
+.. figure:: img/artist-list-order-by-name.png
+
+  Click again on the active option to reverse the sorting order from 'descending' to 'ascending' (DESC/ASC).
+
+The available options are:
 
 * :ref:`Name: <artist-form-artist-name>` The name of the artist.
 * :ref:`Date of formation / date of birth: <artist-form-begin-date>` The date a group formed / a person was born.
@@ -584,13 +707,17 @@ To sort it differently, click on **Ordering** and then on a different options:
 Filtering the list
 ------------------
 
-The list of artists can be filtered using the tags or some fields associated to the artist.
+The list can be filtered by tags or specific properties associated with the artists.
 
-To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
+**Tags**
 
-.. figure:: img/artist-list-tags.png
+Click on **TAGS** to open the menu and click on the tag(s).
 
-To filter by a specific field, use the **Filters** located on the right side of the page,
+  .. figure:: img/artist-list-tags.png
+
+**Specific property**
+
+Click on **Filter:<property>** to open the menu and click on one of the available options.
 
 .. figure:: img/artist-list-filters.png
 
@@ -599,32 +726,54 @@ The available filters are:
 * :ref:`Country: <artist-form-country>` The country a person was born / a band formed.
 * :ref:`Type: <artist-form-type>` The type of artist.
 
+
 .. _artist-list-card:
 
 The Artist card
 ----------------
 
-.. _artist-profile:
+UNDER CONSTRUCTION
 
-Artist profile
-==============
+
+.. _artist-detail:
+
+Detail view
+===========
 
 UNDER CONSTRUCTION
 
+.. figure:: img/artist-detail-overview.png
 
 
 .. _artist-form:
 
-Artist form
-===========
+Form view
+=========
 
 The artist form allows to edit the artist information.
 
+.. figure:: img/artist-form-overview.png
 
-After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
-reset the form.
+  After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
+  reset the form.
+
+On the top side of the form are displayed the current information of the artist (as displayed in the
+:ref:`detail view <artist-detail>`).
+
+On the right side of the page are available the following options:
+
+* **Back to detail view**: Exit the form and return to the detail view.
+* **Administration view**: *(Admin only)*.
+
+A comparison tool is available to help complete the information:
+
+* **Compare - Discogs**: Search for matches in the `Discogs <https://www.discogs.com/>`__ database and retrieve the
+  information from it.
+* **Compare - Musicbrainz**: Search for matches in the `Musicbrainz <https://musicbrainz.org/>`__ database and retrieve
+  the information from it.
 
 Below are described the information open broadcast collect for an artist.
+
 
 .. _artist-form-general:
 
@@ -633,12 +782,14 @@ General
 
 .. figure:: img/artist-form-general.png
 
+
 .. _artist-form-artist-name:
 
 Name
 ^^^^
 
 The official name of the artist as found on the release, be it a person or a band.
+
 
 .. _artist-form-name-variations:
 
@@ -654,6 +805,7 @@ Real name
 ^^^^^^^^^
 
 The real / legal name of the artist. Multiple entries are separated by comma.
+
 
 .. _artist-form-type:
 
@@ -683,12 +835,14 @@ combines instruments from different families.
 
 Anything which does not fit into the above categories.
 
+
 .. _artist-form-country:
 
 Country
 ^^^^^^^
 
 The country a person was born / a band was formed.
+
 
 .. _artist-form-generic-email:
 
@@ -697,12 +851,14 @@ E-mail
 
 A valid e-mail address for general inquires.
 
+
 .. _artist-form-booking-email:
 
 Booking
 ^^^^^^^
 
 A valid e-mail address for booking inquires.
+
 
 .. _artist-form-aliases:
 
@@ -713,14 +869,16 @@ Other name(s) the artist uses to differentiate its work.
 
 .. figure:: img/artist-form-aliases.png
 
-  The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
+.. note::
 
-Typing inside the 'Alias' field activates the auto-completion, listing all profiles in the library whose name matches
-the current text typed in.
+  Typing inside the 'Alias' field activates the auto-completion, listing all profiles in the library whose name matches
+  the current text typed in.
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
 
-.. figure:: img/alias-field-select-create.gif
+  .. figure:: img/artist-form-alias-select-create.gif
+
+    The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
 
   To remove an artist click on the respective 'Delete' check-box and save the form.
 
@@ -734,14 +892,16 @@ The members of the group / orchestra (both current and past members).
 
 .. figure:: img/artist-form-members.png
 
-  The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
+.. note::
 
-Typing inside the 'Member' field activates the auto-completion, listing all profiles in the library whose name matches
-the current text typed in.
+  Typing inside the 'Member' field activates the auto-completion, listing all profiles in the library whose name matches
+  the current text typed in.
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
 
-.. figure:: img/member-field-select-create.gif
+  .. figure:: img/artist-form-member-select-create.gif
+
+    The system automatically creates a new empty field every time a name is entered. (up to 15 per editing session).
 
   To remove an artist click on the respective 'Delete' check-box and save the form.
 
@@ -751,6 +911,7 @@ Identifiers
 The identification codes associated to the artist.
 
 .. figure:: img/artist-form-identifiers.png
+
 
 .. _artist-form-ipi-code:
 
@@ -765,6 +926,7 @@ Party in collective rights management. It is used worldwide by more than 120 cou
 
 .. _wk-interested-parties-information: https://en.wikipedia.org/wiki/Interested_Parties_Information
 .. |wk-interested-parties-information| replace:: *Interested parties information*
+
 
 .. _artist-isni-code:
 
@@ -797,12 +959,14 @@ Begin
 
 The date a group first formed / the person was born.
 
+
 .. _artist-form-end-date:
 
 End
 ^^^
 
 The date a group last dissolved / the person died.
+
 
 .. _artist-form-meta:
 
@@ -811,12 +975,14 @@ Meta information
 
 .. figure:: img/artist-form-meta.png
 
+
 .. _artist-form-biography:
 
 Biography
 ^^^^^^^^^
 
 The artist's biography.
+
 
 .. _artist-form-image:
 
@@ -825,6 +991,7 @@ Artist / band picture
 
 The picture or logo of the artist. To upload an image, click on **Browse** and select a picture from the computer file
 browser.
+
 
 .. _artist-form-tags:
 
@@ -835,14 +1002,17 @@ One or more keyword(s) to help describe the artist(i.e. the music genre, instrum
 
 .. figure:: img/artist-form-tags.png
 
-Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
-current text typed in.
+.. note::
 
-Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
+  current text typed in.
 
-.. figure:: img/tags-field-select-create-remove.gif
+  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
 
-  To remove a specific tag click on the 'X' within it.
+  .. figure:: img/tags-field-select-create-remove.gif
+
+    To remove a specific tag click on the 'X' within it.
+
 
 .. _artist-form-relations:
 
@@ -853,15 +1023,19 @@ The url of the artist page on other online platforms.
 
 .. figure:: img/artist-form-relations.png
 
-  To remove a url / link click on the respective 'Delete' check-box and save the form.
-
+To remove a url / link click on the respective 'Delete' check-box and save the form.
 
 
 .. _track:
 
-**********
+******
 Tracks
-**********
+******
+
+.. _track-overview:
+
+Overview
+========
 
 A track is the way a recording appears on a particular :ref:`release <release>` or, more exactly, on a particular tracklist.
 Every track has a title and is credited to one or more :ref:`artist(s) <artist>`.
@@ -875,19 +1049,28 @@ Visit the :ref:`Track form <track-form>` to see which information open broadcast
 
 .. _track-list:
 
-Tracks list
-===========
+List view
+=========
 
-To access the tracks list, open the **CONTENT** menu, click on **LIBRARY** and then on **TRACKS**.
+To access the list of tracks, open the **CONTENT** menu, click on **LIBRARY** and then on **TRACKS**.
+
+.. figure:: img/library-page-nav-menu-tracks.png
 
 By default the list is sorted by **Creation date** (descending). The newly created profile is displayed
 on the top side of the list / page.
 
-.. figure:: img/track-list-order.png
+.. figure:: img/track-list-order-by-creation-date.png
 
-  Click on the sorting option twice to change the sorting order from 'descending' to 'ascending' (DESC/ASC).
+  Click on the sorting option twice to reverse the sorting order from 'descending' to 'ascending' (DESC/ASC).
 
-To sort it differently, click on **Ordering** and then on a different options:
+To change the ordering parameter, click on **Ordering** to open the menu and click on a different option.
+
+.. figure:: img/track-list-order-by-name.png
+
+  Click again on the active option to reverse the sorting order from 'descending' to 'ascending' (DESC/ASC).
+
+
+The available options are:
 
 * :ref:`Name: <track-form-title>` The title of the track.
 * :ref:`Artist name: <track-form-primary-artist>` The name of the artist(s) the track is credited to.
@@ -904,13 +1087,17 @@ To sort it differently, click on **Ordering** and then on a different options:
 Filtering the list
 ------------------
 
-The list of tracks can be filtered using the tags or some fields associated to the track.
+The list can be filtered by tags or specific properties associated with the tracks.
 
-To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
+**Tags**
+
+Click on **TAGS** to open the menu and click on the tag(s).
 
 .. figure:: img/track-list-tags.png
 
-To filter by a specific field, use the **Filters** located on the right side of the page,
+**Specific property**
+
+Click on **Filter:<property>** to open the menu and click on one of the available options.
 
 .. figure:: img/track-list-filters.png
 
@@ -926,32 +1113,52 @@ The available filters are:
 * :ref:`License: <track-form-license>` The license applied to a track.
 * :ref:`Lyrics Language: <track-form-lyrics-language>` The language of the lyrics.
 
+
 .. _track-list-card:
 
 The Track card
 --------------
 
-.. _track-profile:
+UNDER CONSTRUCTION
 
-Track profile
-=============
+.. _track-detail:
+
+Detail view
+===========
 
 UNDER CONSTRUCTION
+
+.. figure:: img/track-detail-overview.png
 
 
 
 .. _track-form:
 
-Track form
-===========
+Form view
+=========
 
 The track form allows to edit the track information.
 
+.. figure:: img/track-form-overview.png
 
-After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
-reset the form.
+  After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
+  reset the form.
+
+On the top side of the form are displayed the current information of the track (as displayed in the
+:ref:`detail view <track-detail>`).
+
+On the right side of the page are available the following options:
+
+* **Back to detail view**: Exit the form and return to the detail view.
+* **Administration view**: *(Admin only)*.
+
+A comparison tool is available to help complete the information:
+
+* **Compare - Musicbrainz**: Search for matches in the `Musicbrainz <https://musicbrainz.org/>`__ database and retrieve
+  the information from it.
 
 Below are described the information open broadcast collect for a track.
+
 
 .. _track-form-general:
 
@@ -968,6 +1175,7 @@ Title
 
 The title of the track.
 
+
 .. _track-form-release-title:
 
 Release
@@ -975,12 +1183,15 @@ Release
 
 The title of the release the track appears on.
 
-Typing inside the 'Release' field activates the auto-completion, listing all profiles in the library whose name matches
-the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Release' field activates the auto-completion, listing all profiles in the library whose name matches
+  the current text typed in.
 
-.. figure:: img/track-release-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/track-form-release-select-create.gif
+
 
 .. _track-form-primary-artist:
 
@@ -990,12 +1201,15 @@ Artist
 The name of the artist the track is primarily credited to. Use the :ref:`track artists fields <track-form-track-artists>`
 to add multiple artists.
 
-Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name matches
-the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name matches
+  the current text typed in.
 
-.. figure:: img/track-artist-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/track-form-primary-artist-select-create.gif
+
 
 .. _track-form-type:
 
@@ -1014,12 +1228,14 @@ Track number
 
 The track number (the position in the release tracklist).
 
+
 .. _track-form-disc-number:
 
 Disc number
 ^^^^^^^^^^^
 
 The disc number (for releases consisting of multiple discs).
+
 
 .. _track-form-opus-number:
 
@@ -1035,6 +1251,7 @@ similar titles; the word is abbreviated as 'Op.' for a single work, or 'Opp.' wh
 
 .. _wk-opus: https://en.wikipedia.org/wiki/Opus_number
 .. |wk-opus| replace:: *Opus number*
+
 
 .. _track-form-version:
 
@@ -1062,14 +1279,17 @@ By default the system display the name written in the :ref:`primary artist field
 To override the default value, type again the primary artist name inside the first field. Keep adding names in separated
 fields and select the 'join phrase' to be used in between.
 
-Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name
-matches the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name
+  matches the current text typed in.
 
-.. figure:: img/track-artists-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/track-form-track-artists-select-create.gif
 
   To remove an artist click on the respective 'Delete' check-box and save the form.
+
 
 .. _track-form-credited-artists:
 
@@ -1085,14 +1305,17 @@ The extra artist(s) credited to the recording (remixer, composer, lyricist, etc)
 Type the artist name inside the first field. Keep adding names in separated fields and select the appropriate role from
 the 'Credited as' dropdown list.
 
-Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name
-matches the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Artist' field activates the auto-completion, listing all profiles in the library whose name
+  matches the current text typed in.
 
-.. figure:: img/track-artists-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/track-form-track-credits-select-create.gif
 
   To remove an artist click on the respective 'Delete' check-box and save the form.
+
 
 .. _track-form-identifiers:
 
@@ -1124,7 +1347,7 @@ but codes are often presented that way in print to make them easier to read.
 .. _track-form-license:
 
 License / Source
------------------
+----------------
 
 The license applied to the recording.
 
@@ -1146,7 +1369,6 @@ Restricted - Self owned
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Apply this license when you are the copyright holder of the composition and sound recording.
-
 
 Multiple
 ^^^^^^^^^
@@ -1225,14 +1447,17 @@ One or more keyword(s) to help describe the track (i.e. the music genre / style)
 
 .. figure:: img/track-form-tags.png
 
-Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
-current text typed in.
+.. note::
 
-Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
+  current text typed in.
 
-.. figure:: img/tags-field-select-create-remove.gif
+  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+
+  .. figure:: img/tags-field-select-create-remove.gif
 
   To remove a specific tag click on the 'X' within it.
+
 
 .. _track-form-relations:
 
@@ -1243,15 +1468,20 @@ The url of the track page on other online platforms.
 
 .. figure:: img/track-form-relations.png
 
-  To remove a url / link click on the respective 'Delete' check-box and save the form.
-
+To remove a url / link click on the respective 'Delete' check-box and save the form.
 
 
 .. _label:
 
-**********
+******
 Labels
-**********
+******
+
+
+.. _label-overview:
+
+Overview
+========
 
 A record label, or record company, is a brand or trademark associated with the marketing of music recordings and
 music videos. Sometimes, a record label is also a publishing company that manages such brands and trademarks,
@@ -1265,21 +1495,28 @@ recordings and music videos, while also conducting talent scouting and developme
 
 Visit the :ref:`Label form <label-form>` to see which information open broadcast collect for a label.
 
+
 .. _label-list:
 
-Labels list
-===========
+List view
+=========
 
 To access the list of labels, open the **CONTENT** menu, click on **LIBRARY** and then on **LABELS**.
+
+.. figure:: img/library-page-nav-menu-labels.png
 
 By default, the list is sorted by **Creation date** (descending). The newly created profile is displayed
 on the top-left side of the list / page.
 
-.. figure:: img/label-list-order.png
+.. figure:: img/label-list-order-by-creation-date.png
 
-  Click on the sorting option twice to change the sorting order from 'descending' to 'ascending' (DESC/ASC).
+To change the ordering parameter, click on **Ordering** to open the menu and click on a different option.
 
-To sort it differently, click on **Ordering** and then on a different options:
+.. figure:: img/label-list-order-by-name.png
+
+  Click again on the active option to reverse the sorting order from 'descending' to 'ascending' (DESC/ASC).
+
+The available options are:
 
 * **Creation date**: The date the label profile was created.
 * **Modification date**: The last date a label profile was edited.
@@ -1291,13 +1528,17 @@ To sort it differently, click on **Ordering** and then on a different options:
 Filtering the list
 ------------------
 
-The list of labels can be filtered using the tags or some fields associated to the label.
+The list can be filtered by tags or specific properties associated with the labels.
 
-To filter by tags, click on **TAGS** and select one or more tag(s) from the list.
+**Tags**
+
+Click on **TAGS** to open the menu and click on the tag(s).
 
 .. figure:: img/label-list-tags.png
 
-To filter by a specific field, use the **Filters** located on the right side of the page,
+**Specific property**
+
+Click on **Filter:<property>** to open the menu and click on one of the available options.
 
 .. figure:: img/label-list-filters.png
 
@@ -1307,27 +1548,59 @@ The available filters are:
 * :ref:`Type: <label-form-type>` The type of label.
 * :ref:`Established: <label-form-life-start>` The year the label was established.
 
+Tags and filters also work in combination.
+
+Click again on any active tag or filter to deselect it and reset the result-set.
+
+
 .. _label-list-card:
 
 The Label card
 --------------
 
+UNDER CONSTRUCTION
 
-.. _label-profile:
 
-Label profile
-=============
+.. _label-detail:
+
+Detail view
+===========
 
 UNDER CONSTRUCTION
+
+.. figure:: img/label-detail-overview.png
 
 
 
 .. _label-form:
 
-Label form
-===========
+Form view
+=========
 
 The label form allows to edit the label information.
+
+.. figure:: img/label-form-overview.png
+
+  After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
+  reset the form.
+
+On the top side of the form are displayed the current information of the label (as displayed in the
+:ref:`detail view <label-detail>`).
+
+On the right side of the page are available the following options:
+
+* **Back to detail view**: Exit the form and return to the detail view.
+* **Administration view**: *(Admin only)*.
+
+A comparison tool is available to help complete the information:
+
+* **Compare - Discogs**: Search for matches in the `Discogs <https://www.discogs.com/>`__ database and retrieve the
+  information from it.
+* **Compare - Musicbrainz**: Search for matches in the `Musicbrainz <https://musicbrainz.org/>`__ database and retrieve
+  the information from it.
+
+Below are described the information open broadcast collect for a label.
+
 
 .. _label-form-general:
 
@@ -1419,12 +1692,14 @@ Parent label
 
 The parent label / record company of the label whose profile is being edited.
 
-Typing inside the 'Parent Label' field activates the auto-completion, listing all profiles in the library whose name
-matches the current text typed in.
+.. note::
 
-Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+  Typing inside the 'Parent Label' field activates the auto-completion, listing all profiles in the library whose name
+  matches the current text typed in.
 
-.. figure:: img/parent-label-field-select-create.gif
+  Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
+
+  .. figure:: img/label-form-parent-label-select-create.gif
 
 .. _label-form-activity:
 
@@ -1518,12 +1793,14 @@ One or more keyword(s) to help describe the label (i.e. the music genre / style)
 
 .. figure:: img/label-form-tags.png
 
-Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
-current text typed in.
+.. note::
 
-Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with
+  the current text typed in.
 
-.. figure:: img/tags-field-select-create-remove.gif
+  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+
+  .. figure:: img/tags-field-select-create-remove.gif
 
   To remove a specific tag click on the 'X' within it.
 
@@ -1532,9 +1809,8 @@ Click on the matching tag to select it or hit the 'Enter' key to create a new ta
 Relations
 ---------
 
-.. figure:: img/label-form-relations.png
-
-  To remove a url / link click on the respective 'Delete' check-box and save the form.
-
 The url of the label page on other online platforms.
 
+.. figure:: img/label-form-relations.png
+
+To remove a url / link click on the respective 'Delete' check-box and save the form.

@@ -1,8 +1,16 @@
 .. _user:
 
-##############
+#####
 Users
-##############
+#####
+
+.. _user-introduction:
+
+************
+Introduction
+************
+
+A User is any natural or legal person accessing Open Broadcast manually or mechanically.
 
 UNDER CONSTRUCTION
 
@@ -16,10 +24,10 @@ Users list
 UNDER CONSTRUCTION
 
 
-.. _user-profile:
+.. _user-detail:
 
 ************
-User profile
+Detail view
 ************
 
 UNDER CONSTRUCTION
@@ -27,17 +35,22 @@ UNDER CONSTRUCTION
 
 .. _user-form:
 
-************
-User form
-************
+*********
+Form view
+*********
 
 UNDER CONSTRUCTION
 
+.. _user-how-to:
 
-.. _user-invitation:
+*******
+How Tos
+*******
 
-**************
+
+.. _user-invite-user:
+
 Inviting users
-**************
+==============
 
 UNDER CONSTRUCTION
