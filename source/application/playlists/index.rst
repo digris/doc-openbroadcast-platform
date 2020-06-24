@@ -72,13 +72,13 @@ Filtering the list
 
 The list can be filtered by tags or specific properties associated with the playlists.
 
-* **Tags**
+**BY TAGS**
 
 Click on **TAGS** to open the menu and click on the tag(s).
 
 .. figure:: img/playlist-list-tags.png
 
-**Specific property**
+**BY SPECIFIC PROPERTY**
 
 Click on **Filter:<property>** to open the menu and click on one of the available options.
 
@@ -109,8 +109,8 @@ Click again on any active tag or filter to deselect it and reset the result-set.
 The Playlist card
 =================
 
-The playlist card is the way the playlist appears in the list. It displays some information of the playlist
-and it includes some functions that can be performed on the playlist.
+The playlist card displays some information of the playlist and it includes some functions that can be performed on the
+playlist.
 
 .. figure:: img/playlist-list-card.png
 
@@ -127,7 +127,7 @@ Starting at the top, the information displayed are:
 * :ref:`User name <user>`: The name of the user who created the playlist.
 * **Actual duration**: The actual duration of the playlist.
 
-To play the playlist, move the cursor over the Cover art and click on the 'Play' icon.
+To play the tracks on the playlist, move the cursor over the Cover art and click on the 'Play' icon.
 
 .. figure:: img/playlist-list-card-play.png
 
@@ -195,7 +195,7 @@ The detail view display all information associated with the playlist. Starting a
 * :ref:`Rotation <playlist-form-include-rotation>`: It informs if the playlist is included in rotation.
 * **Duration**: The actual / :ref:`target <playlist-form-target-duration>` of the playlist.
 * :ref:`Broadcast Dayparts <playlist-form-best-dayparts>`: The broadcast dayparts of the playlist.
-* :ref:`Tags <playlist-form-tags>`: The tags of the playlist.
+* :ref:`Tags <playlist-form-tags>`: The tags associated with the playlist.
 * :ref:`Cover art <playlist-form-cover-art>` (right side): The cover art of the playlist.
 * **Thumb up / thumb down** (right side): The rating tool.
 

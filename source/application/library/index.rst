@@ -103,15 +103,15 @@ Filtering the list
 
 The list can be filtered by tags or specific properties associated with the releases.
 
-**Tags**
+**TAGS**
 
 Click on **TAGS** to open the menu and click on the tag(s).
 
   .. figure:: img/release-list-tags.png
 
-**Specific property**
+**PROPERTY**
 
-Click on **Filter:<property>** to open the menu and click on one of the available options.
+Click on the **Filter: <property>** to open the menu and click on one of the available options.
 
 .. figure:: img/release-list-filters.png
 
@@ -136,8 +136,8 @@ Click again on any active tag or filter to deselect it and reset the result-set.
 The Release card
 ----------------
 
-The release card is the way the release appears in the list. It displays some information of the release and it includes
-some functions that can be performed on the release.
+The release card displays some information of the release and it includes some functions that can be performed on the
+release.
 
 .. figure:: img/release-list-card.png
 
@@ -154,7 +154,7 @@ Starting at the top, the information displayed are:
 * **User name**: The name of the user who created the release profile.
 * **Creation date**: The date the release profile was created.
 
-To play the release, move the cursor over the Cover art and click on the 'Play' icon.
+To play the tracks on the release, move the cursor over the Cover art and click on the 'Play' icon.
 
 .. figure:: img/release-list-card-play.png
 
@@ -210,8 +210,8 @@ the release.
 
 The detail view displays all information associated with the release. Starting at the top, the information are:
 
-* **Heading**: The :ref:`title <release-form-title>` / :ref:`type <release-form-type>`
-  (the :ref:`country <release-form-country>` the release was issued in).
+* :ref:`Title <release-form-title>` / :ref:`Type <release-form-type>` (:ref:`Country <release-form-country>`):
+  The title of the release / the type of release (the country release was issued in).
 * :ref:`Artist <release-form-album-artist>`: The artist(s) the release is credited to.
 * :ref:`Label <release-form-label>`: The label the release was issued on.
 * :ref:`Catalog No <release-form-catalog-number>`: The label the release was issued on.
@@ -219,7 +219,7 @@ The detail view displays all information associated with the release. Starting a
 * :ref:`License <track-form-license>`: The license applied to the tracks on the release.
 * **Date created**: The date the release profile was created / the :ref:`user <user>` who created the profile.
 * **Last Updated**: The last date the release profile was edited / The last :ref:`user <user>` who edited the profile.
-* :ref:`Tags <release-form-tags>`: The tags of the release.
+* :ref:`Tags <release-form-tags>`: The tags associated with the release.
 * :ref:`Cover art <release-form-cover-art>` (right side): The cover art of the release.
 * **Thumb up / thumb down** (right side): The rating tool.
 
@@ -255,9 +255,11 @@ Below the options are listed the url(s) of the release page on other online plat
 Form view
 =========
 
-To open the form view of a release, go to the :ref:`release detail <release-detail>` page and click on **Edit**
+The form view allows to edit the information of the release.
 
-.. figure:: img/release-detail-sidebar-edit.png
+To open the form, go to the :ref:`release detail <release-detail>` page and click on **Edit**
+
+.. figure:: img/release-detail-side-menu-edit.png
 
 Or from the :ref:`releases list <release-list>`:
 
@@ -265,15 +267,13 @@ Or from the :ref:`releases list <release-list>`:
 
   Click on **more options** (3 dots) to open the menu and then click on **Edit**.
 
+On the top side of the form are displayed the current information of the release (as displayed in the
+:ref:`detail view <release-detail>`).
+
 .. figure:: img/release-form-overview.png
 
   After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
   reset the form.
-
-The form view allows to edit the information of the release.
-
-On the top side of the form are displayed the current information of the release (as displayed in the
-:ref:`detail view <release-detail>`).
 
 On the right side of the page are available the following options:
 
@@ -569,7 +569,7 @@ The date the release was officially issued.
 Identifiers
 ------------
 
-The identification code associated to the release.
+The identification code associated with the release.
 
 .. figure:: img/release-form-identifiers.png
 
@@ -709,30 +709,72 @@ Filtering the list
 
 The list can be filtered by tags or specific properties associated with the artists.
 
-**Tags**
+**TAGS**
 
 Click on **TAGS** to open the menu and click on the tag(s).
 
   .. figure:: img/artist-list-tags.png
 
-**Specific property**
+**PROPERTY**
 
-Click on **Filter:<property>** to open the menu and click on one of the available options.
+Click on the **Filter: <property>** to open the menu and click on one of the available options.
 
-.. figure:: img/artist-list-filters.png
+.. figure:: img/artist-list-filters-person.png
 
 The available filters are:
 
 * :ref:`Country: <artist-form-country>` The country a person was born / a band formed.
 * :ref:`Type: <artist-form-type>` The type of artist.
 
+Tags and filters also work in combination:
+
+.. figure:: img/artist-list-tags-filters.png
+
+   Example: Show all **REGGAE** **PRODUCERS** and **DRUMMERS** artists that are a **Person**. Sort the results by
+   **Creation date**.
+
+Click again on any active tag or filter to deselect it and reset the result-set.
+
 
 .. _artist-list-card:
 
 The Artist card
-----------------
+---------------
 
-UNDER CONSTRUCTION
+The artist card displays some information of the artist and it includes some functions that can be performed on the artist.
+
+.. figure:: img/artist-list-card.png
+
+Starting at the top, the information displayed are:
+
+* :ref:`Country <artist-form-country>` / :ref:`Type <artist-form-type>`: The country a person was born / a band formed.
+  The type of artist.
+* :ref:`Image: <artist-form-image>` the picture of the artist.
+* :ref:`Tags: <artist-form-tags>` The tags associated to the artist.
+* :ref:`Name: <artist-form-artist-name>` The name of the artist.
+* :ref:`Begin <artist-form-begin-date>` / :ref:`End <artist-form-end-date>`: The year the group first
+  formed / last dissolved or the person was born / died.
+* **User name**: The name of the user who created the artist profile.
+* **Tracks / Releases count** (right side): The number of tracks / releases by the artist.
+* **Creation date** (right side): The date the artist profile was created.
+
+To play all tracks by the artist, move the cursor over the Cover art and click on the 'Play' icon.
+
+.. figure:: img/artist-list-card-play.png
+
+   The :ref:`popup player <popup-player>` opens and starts playing it automatically
+
+To access additional options, click on **more options** (3 dots) to open the menu and then click on an option.
+
+.. figure:: img/artist-list-card-options.png
+
+The available options are:
+
+* **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
+* **Download**: Download the entire discography.
+* **Edit**: Open the :ref:`form view <artist-form>` of the artist.
+* **Admin view**: *(Admin only)*.
+
 
 
 .. _artist-detail:
@@ -740,9 +782,69 @@ UNDER CONSTRUCTION
 Detail view
 ===========
 
-UNDER CONSTRUCTION
+To open the detail view of an artist, go to the :ref:`artists list <artist-list>` page and click on the name of
+the artist.
+
+.. figure:: img/artist-list-open-detail-view.png
 
 .. figure:: img/artist-detail-overview.png
+
+The detail view displays all information associated with the artist. Starting at the top, the information are:
+
+* :ref:`Name <artist-form-artist-name>` (:ref:`Country <artist-form-country>`): The name of the artist (the country of origin
+  of the artist).
+* Appearance: The amount of tracks / releases associated with the artist.
+* :ref:`Real name <artist-form-real-name>`: The real name of the artist.
+* :ref:`Variations <artist-form-name-variations>`: The variations of the artist name.
+* :ref:`Aliases <artist-form-aliases>`: The aliases of the artist.
+* :ref:`Members <artist-form-members>`: The members of the band (group, orchestra).
+* **Date created**: The date the artist profile was created / the :ref:`user <user>` who created the profile.
+* **Last Updated**: The last date the artist profile was edited / the last :ref:`user <user>` who edited the profile.
+* :ref:`Tags <release-form-tags>`: The tags associated with the artist.
+* :ref:`Image <release-form-cover-art>` (right side): The image of the artist.
+* **Thumb up / thumb down** (right side): The rating tool.
+
+Overview tab
+------------
+
+The most popular tracks / releases by the artist.
+
+.. figure:: img/artist-detail-tab-overview.png
+
+  Click on "Show all tracks / releases by <artist>" to display all tracks / releases in a new page.
+
+Credited tab
+------------
+
+The list of tracks the artist is :ref:`credited <track-form-credited-artists>` to.
+
+.. figure:: img/artist-detail-tab-credited.png
+
+
+Biography tab
+-------------
+
+The :ref:`biography <artist-form-biography>` of the artist.
+
+.. figure:: img/artist-detail-tab-biography.png
+
+
+Statistics tab
+--------------
+
+The tracks usage statistics.
+
+.. figure:: img/release-detail-tab-statistics.png
+
+On the right side of the page are available the following options:
+
+* :ref:`Edit <artist-form>`: Open the form to edit the information of the artist.
+* **Administration view**: *(Admin only)*.
+* **Follow artist**: Start to follow the artist.
+
+.. figure:: img/artist-detail-side-menu.png
+
+  Below the options are listed the url(s) of the artist page on other online platforms.
 
 
 .. _artist-form:
@@ -750,15 +852,25 @@ UNDER CONSTRUCTION
 Form view
 =========
 
-The artist form allows to edit the artist information.
+The form view allows to edit the information of the artist.
+
+To open the form, go to the :ref:`artist detail <artist-detail>` page and click on **Edit**
+
+.. figure:: img/artist-detail-side-menu-edit.png
+
+Or from the :ref:`artists list <artist-list>`:
+
+.. figure:: img/artist-list-card-options-edit.png
+
+  Click on **more options** (3 dots) to open the menu and then click on **Edit**.
+
+On the top side of the form are displayed the current information of the artist (as displayed in the
+:ref:`detail view <artist-detail>`).
 
 .. figure:: img/artist-form-overview.png
 
   After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
   reset the form.
-
-On the top side of the form are displayed the current information of the artist (as displayed in the
-:ref:`detail view <artist-detail>`).
 
 On the right side of the page are available the following options:
 
@@ -1089,15 +1201,15 @@ Filtering the list
 
 The list can be filtered by tags or specific properties associated with the tracks.
 
-**Tags**
+**TAGS**
 
 Click on **TAGS** to open the menu and click on the tag(s).
 
 .. figure:: img/track-list-tags.png
 
-**Specific property**
+**PROPERTY**
 
-Click on **Filter:<property>** to open the menu and click on one of the available options.
+Click on the **Filter: <property>** to open the menu and click on one of the available options.
 
 .. figure:: img/track-list-filters.png
 
@@ -1112,6 +1224,10 @@ The available filters are:
 * **Encoding**: The audio encoder property of the file associated to the track.
 * :ref:`License: <track-form-license>` The license applied to a track.
 * :ref:`Lyrics Language: <track-form-lyrics-language>` The language of the lyrics.
+
+Tags and filters also work in combination.
+
+Click again on any active tag or filter to deselect it and reset the result-set.
 
 
 .. _track-list-card:
@@ -1137,15 +1253,16 @@ UNDER CONSTRUCTION
 Form view
 =========
 
-The track form allows to edit the track information.
+The form view allows to edit the information of the track.
+
+On the top side of the form are displayed the current information of the track (as displayed in the
+:ref:`detail view <track-detail>`).
 
 .. figure:: img/track-form-overview.png
 
   After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
   reset the form.
 
-On the top side of the form are displayed the current information of the track (as displayed in the
-:ref:`detail view <track-detail>`).
 
 On the right side of the page are available the following options:
 
@@ -1322,7 +1439,7 @@ the 'Credited as' dropdown list.
 Identifiers
 -----------
 
-The identification code associated to the recording.
+The identification code associated with the recording.
 
 .. figure:: img/track-form-identifiers.png
 
@@ -1530,15 +1647,15 @@ Filtering the list
 
 The list can be filtered by tags or specific properties associated with the labels.
 
-**Tags**
+**TAGS**
 
 Click on **TAGS** to open the menu and click on the tag(s).
 
 .. figure:: img/label-list-tags.png
 
-**Specific property**
+**PROPERTY**
 
-Click on **Filter:<property>** to open the menu and click on one of the available options.
+Click on the **Filter: <property>** to open the menu and click on one of the available options.
 
 .. figure:: img/label-list-filters.png
 
@@ -1577,15 +1694,15 @@ UNDER CONSTRUCTION
 Form view
 =========
 
-The label form allows to edit the label information.
+The form view allows to edit the information of the label.
+
+On the top side of the form are displayed the current information of the label (as displayed in the
+:ref:`detail view <label-detail>`).
 
 .. figure:: img/label-form-overview.png
 
   After editing the information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and
   reset the form.
-
-On the top side of the form are displayed the current information of the label (as displayed in the
-:ref:`detail view <label-detail>`).
 
 On the right side of the page are available the following options:
 
@@ -1621,7 +1738,7 @@ The official name of the label.
 Label type
 ^^^^^^^^^^^
 
-The type of label. Please refer to the descriptions below to determine the which value to choose.
+The type of label. Please refer to the descriptions below to determine which value to choose.
 
 **Unknown**
 
