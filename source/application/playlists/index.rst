@@ -8,11 +8,11 @@ Playlists
 #########
 
 
-.. _playlist-introduction:
+.. _playlist-overview:
 
-************
-Introduction
-************
+********
+Overview
+********
 
 A playlist is a list of audio files that are played in sequence.
 

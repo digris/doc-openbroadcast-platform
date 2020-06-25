@@ -5,11 +5,11 @@ Activities
 ##########
 
 
-.. _activities-introduction:
+.. _activities-overview:
 
-************
-Introduction
-************
+********
+Overview
+********
 
 'Activities' are the actions performed by the :ref:`users <user>` on the platform.
 

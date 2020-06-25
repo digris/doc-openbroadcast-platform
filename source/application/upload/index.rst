@@ -5,15 +5,15 @@ Upload
 #######
 
 
-.. _upload-introduction:
+.. _upload-overview:
 
-************
-Introduction
-************
+********
+Overview
+********
 
 The upload module allows to upload and import audio file(s) in the library.
 
-To start a new upload session, open the **CONTENT** menu and click on **UPLOAD**.
+To access it, open the **CONTENT** menu and click on **UPLOAD**.
 
 .. figure:: img/content-sub-nav-upload.png
 
@@ -23,22 +23,21 @@ Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
 
 .. figure:: img/new-session-terms.png
 
+.. figure:: img/upload-overview.png
+
 The module is composed of 2 elements:
 
 * The area where the file(s) to be imported are listed (orange).
 * The summary of the current upload session (blue).
 
-.. figure:: img/upload-overview.png
-
 
 .. _upload-summary-current-import:
 
-*************
 Summary panel
-*************
+=============
 
-The state of the current session is displayed on the right side of the page, and it automatically updates whenever the
-information are completed or an action is taken on the file(s).
+The state of the current upload session automatically updates whenever the information are completed or an action is
+taken on the file(s).
 
 .. figure:: img/upload-overview-summary-upload-session.png
    :width: 320px
@@ -56,39 +55,47 @@ The summary includes:
 
 .. _upload-media-info-card:
 
-***************
-File info card
-***************
 
-The info card display some information associated with the file and it includes some functions that can be performed on
+File info card
+==============
+
+Once a file is uploaded, it is added to the list of files to be reviewed and then imported.
+
+.. figure:: img/upload-overview-media-card.png
+
+The info card displays the information associated with the file and it includes some functions that can be performed on
 the file.
 
 .. figure:: img/media-card-overview.png
 
-It consists of the following elements:
+The appearance of the card and the information inside will vary depending on the result of the analysis that occurred
+during the upload. Visit the :ref:`uploading files <upload-new-upload-upload-file>` guide for more details.
+
+Below the most common elements.
 
 Header
-======
-
-It shows the original filename and audio format of the file (as displayed in the computer file browser).
+------
 
 .. figure:: img/media-card-header.png
 
    thumb turns 'up' as soon as mandatory fields are completed.
 
-File metadata
-=============
+It shows the original filename and audio format of the file (as displayed in the computer file browser).
 
-The information found in the metadata container of the file (as displayed on most audio players).
+File metadata
+-------------
 
 .. figure:: img/media-card-metadata.png
 
-Mandatory information
-=====================
+It show the information found in the metadata container of the file (as displayed on most audio players).
 
-The required information in order to continue importing the file.
+
+Mandatory information
+---------------------
 
 .. figure:: img/media-card-mandatory-fields.png
+
+The information you need to complete in order to import the file, which are:
 
 * **Title:** The title of the recording.
 * **Release:** The name of the release the recording appear on.
@@ -101,16 +108,19 @@ The required information in order to continue importing the file.
   :ref:`label <label-form>` forms.
 
 Actions
-=======
-
-The actions you can take on the file.
+-------
 
 .. figure:: img/media-card-footer-functions.png
+
+The actions you can take on the file, which are:
 
 * **Remove file**: Remove and don't import the file.
 * **Scan again**: Create an audio fingerprint and search matches on Musicbrainz (`acoustic ID <https://acoustid.org/>`_).
 * **Continue import**: Import the file.
 
+See also:
+
+* :ref:`Uploading files <upload-new-upload-upload-file>`
 
 .. _upload-how-to:
 
@@ -123,6 +133,14 @@ How tos
 
 Uploading files
 ===============
+
+To start a new upload session, open the **CONTENT** menu and click on **UPLOAD**.
+
+.. figure:: img/content-sub-nav-upload.png
+
+Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
+`Terms & Conditions <https://www.openbroadcast.org/about/terms-and-conditions/>`__ and that you have read this
+:ref:`documentation <upload>` and understand how importing works.
 
 Click on **ADD FILES** to open the computer file browser and select the files or drag-n-drop the files into the white frame.
 

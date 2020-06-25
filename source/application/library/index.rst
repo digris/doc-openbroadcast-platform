@@ -10,11 +10,11 @@ Library
 ##############
 
 
-.. _library-introduction:
+.. _library-overview:
 
-************
-Introduction
-************
+********
+Overview
+********
 
 As the place of media production, the platform connects a high quality work environment with a comprehensive music
 library.
@@ -146,7 +146,7 @@ Starting at the top, the information displayed are:
 * :ref:`Release country: <release-form-country>` The country the release was issued in.
 * :ref:`Release date: <release-form-release-date>` The date the release was officially issued.
 * :ref:`Cover art: <release-form-cover-art>` the cover art of the release.
-* :ref:`Tags: <release-form-tags>` The tags associated to the release.
+* :ref:`Tags: <release-form-tags>` The tags associated with the release.
 * :ref:`Release title: <release-form-title>` The title of the release
 * :ref:`Artist: <release-form-album-artist>` The name of the artist the release is credited to.
 * :ref:`Label: <label>` The name of label the release was issued on.
@@ -247,8 +247,9 @@ On the right side of the page are available the following options:
 * **Merge selection**: *(Admin only)*.
 * **Re-assign selection**: *(Admin only)*.
 
-Below the options are listed the url(s) of the release page on other online platforms.
+.. figure:: img/release-detail-side-menu.png
 
+  Below the options are listed the url(s) of the artist page on other online platforms.
 
 .. _release-form:
 
@@ -295,17 +296,16 @@ Below are described the information open broadcast collect for a release.
 General
 -------
 
-.. figure:: img/release-form-general.png
-
-  Mandatory fields are marked with ***** and cannot be omitted.
-
-
 .. _release-form-title:
 
 Name
 ^^^^
 
 The official title of the release. It can be found in the cover art, promo sheet or on reliable online sources.
+
+.. figure:: img/release-form-general-name.png
+
+  Mandatory fields are marked with ***** and cannot be omitted.
 
 
 .. _release-form-type:
@@ -314,6 +314,8 @@ Release type
 ^^^^^^^^^^^^
 
 The type of release. Please refer to the descriptions below to determine which value to choose.
+
+.. figure:: img/release-form-general-type.png
 
 **Album**
 
@@ -458,6 +460,8 @@ Total tracks
 
 The total number of tracks on the release.
 
+.. figure:: img/release-form-general-total-tracks.png
+
 
 .. _release-form-album-artist:
 
@@ -466,7 +470,7 @@ Album artists
 
 The artist(s) the release is primarily credited to.
 
-.. figure:: img/release-form-album-artist.png
+.. figure:: img/release-form-album-artist-join-artist.png
 
 By default the system display the name of the artist the tracks on the release are credited to. If the tracks are
 credited to multiple artists (i.e. a compilation) 'Various artists' will be displayed instead.
@@ -493,9 +497,6 @@ the names in separated fields and select the 'join phrase' to be used in between
 Meta
 ----
 
-.. figure:: img/release-form-meta.png
-
-
 .. _release-form-description:
 
 Description
@@ -503,13 +504,19 @@ Description
 
 The description of the release.
 
+.. figure:: img/release-form-meta-description.png
+
 
 .. _release-form-cover-art:
 
 Main image
 ^^^^^^^^^^
 
-The cover art of the release. To upload an image, click on **Browse** and select a picture from the computer file browser.
+The cover art of the release.
+
+.. figure:: img/release-form-meta-image.png
+
+  To upload an image, click on **Browse** and select a picture from the computer file browser.
 
 
 .. _release-form-label-catalog:
@@ -517,15 +524,14 @@ The cover art of the release. To upload an image, click on **Browse** and select
 Label / Catalog
 ---------------
 
-.. figure:: img/release-form-label-catalog.png
-
-
 .. _release-form-label:
 
 Label
 ^^^^^
 
 The name of the label the release was issued on.
+
+.. figure:: img/release-form-label-catalog-label.png
 
 .. note::
 
@@ -547,6 +553,8 @@ Catalog number
 
 The catalog number the label assigned to the release.
 
+.. figure:: img/release-form-label-catalog-cat-number.png
+
 
 .. _release-form-country:
 
@@ -554,6 +562,8 @@ Release country
 ^^^^^^^^^^^^^^^
 
 The country the release was issued in.
+
+.. figure:: img/release-form-label-catalog-release-country.png
 
 
 .. _release-form-release-date:
@@ -563,6 +573,8 @@ Release date
 
 The date the release was officially issued.
 
+.. figure:: img/release-form-label-catalog-release-date.png
+
 
 .. _release-form-identifiers:
 
@@ -571,15 +583,15 @@ Identifiers
 
 The identification code associated with the release.
 
-.. figure:: img/release-form-identifiers.png
-
-
 .. _release-form-barcode:
 
 Barcode
 ^^^^^^^^
 
-The barcode of the release. Please refer to the description below.
+The barcode of the release.
+
+.. figure:: img/release-form-identifiers-barcode.png
+
 
 Barcodes are numbers used as stock control mechanisms by retailers: as such they are highly standardised and well
 recognised, and form an invaluable identifier for communication between companies. On physical releases, they usually
@@ -607,7 +619,7 @@ Tags
 
 One or more keyword(s) to help describe the release (i.e. the music genre / style).
 
-.. figure:: img/release-form-tags.png
+.. figure:: img/release-form-tags-tags.png
 
 .. note::
 
@@ -628,7 +640,7 @@ Relations
 
 The url of the release page on other online platforms.
 
-.. figure:: img/release-form-relations.png
+.. figure:: img/release-form-relations-relation.png
 
 To remove a url / link click on the respective 'Delete' check-box and save the form.
 
@@ -750,7 +762,7 @@ Starting at the top, the information displayed are:
 * :ref:`Country <artist-form-country>` / :ref:`Type <artist-form-type>`: The country a person was born / a band formed.
   The type of artist.
 * :ref:`Image: <artist-form-image>` the picture of the artist.
-* :ref:`Tags: <artist-form-tags>` The tags associated to the artist.
+* :ref:`Tags: <artist-form-tags>` The tags associated with the artist.
 * :ref:`Name: <artist-form-artist-name>` The name of the artist.
 * :ref:`Begin <artist-form-begin-date>` / :ref:`End <artist-form-end-date>`: The year the group first
   formed / last dissolved or the person was born / died.
@@ -892,9 +904,6 @@ Below are described the information open broadcast collect for an artist.
 General
 --------
 
-.. figure:: img/artist-form-general.png
-
-
 .. _artist-form-artist-name:
 
 Name
@@ -902,6 +911,7 @@ Name
 
 The official name of the artist as found on the release, be it a person or a band.
 
+.. figure:: img/artist-form-general-name.png
 
 .. _artist-form-name-variations:
 
@@ -909,6 +919,8 @@ Variations
 ^^^^^^^^^^^
 
 The variations of the artist name (abbreviations, different initials etc.). Multiple entries are separated by comma.
+
+.. figure:: img/artist-form-general-name-variation.png
 
 
 .. _artist-form-real-name:
@@ -918,6 +930,7 @@ Real name
 
 The real / legal name of the artist. Multiple entries are separated by comma.
 
+.. figure:: img/artist-form-general-real-name.png
 
 .. _artist-form-type:
 
@@ -925,6 +938,9 @@ Artist type
 ^^^^^^^^^^^
 
 The type of Artist. Please refer to the descriptions below to determine which value to choose.
+
+.. figure:: img/artist-form-general-type.png
+
 
 **Person**
 
@@ -955,6 +971,9 @@ Country
 
 The country a person was born / a band was formed.
 
+.. figure:: img/artist-form-general-country.png
+
+
 
 .. _artist-form-generic-email:
 
@@ -962,6 +981,9 @@ E-mail
 ^^^^^^^
 
 A valid e-mail address for general inquires.
+
+.. figure:: img/artist-form-general-email.png
+
 
 
 .. _artist-form-booking-email:
@@ -971,6 +993,9 @@ Booking
 
 A valid e-mail address for booking inquires.
 
+.. figure:: img/artist-form-general-booking.png
+
+
 
 .. _artist-form-aliases:
 
@@ -979,7 +1004,7 @@ Aliases
 
 Other name(s) the artist uses to differentiate its work.
 
-.. figure:: img/artist-form-aliases.png
+.. figure:: img/artist-form-aliases-alias.png
 
 .. note::
 
@@ -1002,7 +1027,7 @@ Members
 
 The members of the group / orchestra (both current and past members).
 
-.. figure:: img/artist-form-members.png
+.. figure:: img/artist-form-members-member.png
 
 .. note::
 
@@ -1020,9 +1045,7 @@ The members of the group / orchestra (both current and past members).
 Identifiers
 -----------
 
-The identification codes associated to the artist.
-
-.. figure:: img/artist-form-identifiers.png
+The identification codes associated with the artist.
 
 
 .. _artist-form-ipi-code:
@@ -1030,7 +1053,9 @@ The identification codes associated to the artist.
 IPI code
 ^^^^^^^^^
 
-The IPI code assigned by CISAC. Please refer to the descriptions below.
+The IPI code assigned by CISAC.
+
+.. figure:: img/artist-form-identifiers-ipi-code.png
 
 IPI (Interested party information) is a unique identifying number assigned by the CISAC database to each Interested
 Party in collective rights management. It is used worldwide by more than 120 countries and three million right holders.
@@ -1045,7 +1070,9 @@ Party in collective rights management. It is used worldwide by more than 120 cou
 ISNI code
 ^^^^^^^^^^
 
-The International Standard Name Identifier for the artist. Please refer to the descriptions below.
+The International Standard Name Identifier for the artist.
+
+.. figure:: img/artist-form-identifiers-isni-code.png
 
 The International Standard Name Identifier (ISNI) is an identifier for uniquely identifying the public identities of
 contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists
@@ -1061,15 +1088,14 @@ of 16 digits. It can optionally be displayed as divided into four blocks.
 Activity
 --------
 
-.. figure:: img/artist-form-activity.png
-
-
 .. _artist-form-begin-date:
 
 Begin
 ^^^^^^
 
 The date a group first formed / the person was born.
+
+.. figure:: img/artist-form-activity-begin.png
 
 
 .. _artist-form-end-date:
@@ -1079,14 +1105,13 @@ End
 
 The date a group last dissolved / the person died.
 
+.. figure:: img/artist-form-activity-end.png
+
 
 .. _artist-form-meta:
 
 Meta information
 ----------------
-
-.. figure:: img/artist-form-meta.png
-
 
 .. _artist-form-biography:
 
@@ -1095,15 +1120,20 @@ Biography
 
 The artist's biography.
 
+.. figure:: img/artist-form-meta-biography.png
+
+
 
 .. _artist-form-image:
 
 Artist / band picture
 ^^^^^^^^^^^^^^^^^^^^^
 
-The picture or logo of the artist. To upload an image, click on **Browse** and select a picture from the computer file
-browser.
+The picture or logo of the artist.
 
+.. figure:: img/artist-form-meta-image.png
+
+  To upload an image, click on **Browse** and select a picture from the computer file browser.
 
 .. _artist-form-tags:
 
@@ -1112,7 +1142,7 @@ Tags
 
 One or more keyword(s) to help describe the artist(i.e. the music genre, instruments, profession).
 
-.. figure:: img/artist-form-tags.png
+.. figure:: img/artist-form-tags-tags.png
 
 .. note::
 
@@ -1133,7 +1163,7 @@ Relations
 
 The url of the artist page on other online platforms.
 
-.. figure:: img/artist-form-relations.png
+.. figure:: img/artist-form-relations-relation.png
 
 To remove a url / link click on the respective 'Delete' check-box and save the form.
 
@@ -1219,9 +1249,9 @@ The available filters are:
 * :ref:`Version: <track-form-version>` The version of the track.
 * **Num Emissions**: The number of times the track was played on-air (airplay).
 * **Last Emission**: The last date the track was played on-air.
-* **Bitrate**: The bitrate property of the file associated to the track.
-* **Samplerate**: The samplerate property of the file associated to the track.
-* **Encoding**: The audio encoder property of the file associated to the track.
+* **Bitrate**: The bitrate property of the file associated with the track.
+* **Samplerate**: The samplerate property of the file associated with the track.
+* **Encoding**: The audio encoder property of the file associated with the track.
 * :ref:`License: <track-form-license>` The license applied to a track.
 * :ref:`Lyrics Language: <track-form-lyrics-language>` The language of the lyrics.
 
@@ -1473,27 +1503,27 @@ The license applied to the recording.
 Please refer to the descriptions below to determine which value to choose.
 
 Restricted - Commercial
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Apply this license when the usage of the recording is monetized.
 
 Restricted use
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 Apply this license when the copyright information is unknown.
 
 Restricted - Self owned
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Apply this license when you are the copyright holder of the composition and sound recording.
 
 Multiple
-^^^^^^^^^
+^^^^^^^^
 
 Apply this license when the recording contains multiple content with different licenses apply to them.
 
 Public domain
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 The public domain consists of all the creative work to which no exclusive intellectual property rights apply. Those
 rights may have expired, been forfeited, expressly waived, or may be inapplicable.
@@ -1506,7 +1536,7 @@ domain either by virtue of their having been created before copyright existed, o
 .. _wk-public-domain: https://en.wikipedia.org/wiki/Public_domain
 
 Creative Commons
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 A Creative Commons (CC) license is one of several public copyright licenses that enable the free distribution of an
 otherwise copyrighted 'work'. A CC license is used when an author wants to give other people the right to share, use,
@@ -1665,7 +1695,12 @@ The available filters are:
 * :ref:`Type: <label-form-type>` The type of label.
 * :ref:`Established: <label-form-life-start>` The year the label was established.
 
-Tags and filters also work in combination.
+Tags and filters also work in combination:
+
+.. figure:: img/label-list-tags-filters.png
+
+   Example: Show all **ELECTRONIC**, **JAZZ** and **REGGAE** **Independent** labels sorted by **Creation date**.
+
 
 Click again on any active tag or filter to deselect it and reset the result-set.
 
@@ -1675,7 +1710,31 @@ Click again on any active tag or filter to deselect it and reset the result-set.
 The Label card
 --------------
 
-UNDER CONSTRUCTION
+The label card displays some information of the label and it includes some functions that can be performed on the label.
+
+.. figure:: img/label-list-card.png
+
+Starting at the top, the information displayed are:
+
+* :ref:`Country <label-form-country>` / :ref:`Type <label-form-type>`: The country the label was created / the type of
+  label.
+* :ref:`Image: <label-form-image>` the logo of the label.
+* :ref:`Tags: <label-form-tags>` The tags associated with the label.
+* :ref:`Name: <label-form-name>` The name of the label.
+* :ref:`Begin <artist-form-begin-date>` / :ref:`End <artist-form-end-date>`: The year the group first
+  formed / last dissolved or the person was born / died.
+* **User name**: The name of the user who created the label profile.
+* **Releases count** (right side): The number of tracks / releases by the artist.
+* **Creation date** (right side): The date the label profile was created.
+
+To access additional options, click on **more options** (3 dots) to open the menu and then click on an option.
+
+.. figure:: img/label-list-card-options.png
+
+The available options are:
+
+* **Edit**: Open the :ref:`form view <label-form>` of the label.
+* **Admin view**: *(Admin only)*.
 
 
 .. _label-detail:
@@ -1683,10 +1742,58 @@ UNDER CONSTRUCTION
 Detail view
 ===========
 
-UNDER CONSTRUCTION
+To open the detail view of a label, go to the :ref:`labels list <label-list>` page and click on the name of
+the label.
+
+.. figure:: img/label-list-open-detail-view.png
 
 .. figure:: img/label-detail-overview.png
 
+The detail view displays all information associated with the release. Starting at the top, the information are:
+
+* :ref:`Name <label-form-name>` / :ref:`Type <label-form-type>` (:ref:`Country <label-form-country>`):
+  The name of the label / the type of label (the country the label was created).
+* Appearance: The amount of releases issued by the label.
+* :ref:`Parent <label-form-parent-label>`: The parent label.
+* :ref:`Sub Labels <label-form-parent-label>`: The sub label(s).
+* :ref:`Address <label-form-parent-label>`: The address and the contact information.
+* **Date created**: The date the label profile was created / the :ref:`user <user>` who created the profile.
+* **Last Updated**: The last date the label profile was edited / The last :ref:`user <user>` who edited the profile.
+* :ref:`Tags <label-form-tags>`: The tags associated with the label.
+* :ref:`Logo <label-form-image>` (right side): The logo of the label.
+* **Thumb up / thumb down** (right side): The rating tool.
+
+
+Overview tab
+------------
+
+The most popular releases issued by the label.
+
+.. figure:: img/label-detail-tab-overview.png
+
+Description tab
+---------------
+
+The :ref:`description <label-form-description>` of the label.
+
+.. figure:: img/label-detail-tab-description.png
+
+Statistics tab
+--------------
+
+The tracks usage statistics.
+
+.. figure:: img/label-detail-tab-statistics.png
+
+On the right side of the page are available the following options:
+
+* :ref:`Edit <label-form>`: Open the form to edit the information of the label.
+* **Administration view**: *(Admin only)*.
+* **Follow label**: Start to follow the label.
+
+.. figure:: img/label-detail-side-menu.png
+
+  Below the options are listed the url(s) of the label page on other online platforms.
 
 
 .. _label-form:
@@ -1694,7 +1801,17 @@ UNDER CONSTRUCTION
 Form view
 =========
 
-The form view allows to edit the information of the label.
+The form view allows to edit the information of the artist.
+
+To open the form, go to the :ref:`label detail <label-detail>` page and click on **Edit**
+
+.. figure:: img/label-detail-side-menu-edit.png
+
+Or from the :ref:`labels list <label-list>`:
+
+.. figure:: img/label-list-card-options-edit.png
+
+  Click on **more options** (3 dots) to open the menu and then click on **Edit**.
 
 On the top side of the form are displayed the current information of the label (as displayed in the
 :ref:`detail view <label-detail>`).
@@ -1789,7 +1906,7 @@ The label / venue organizing events on a regular basis (festivals, concerts, clu
 Label code (LC code)
 ^^^^^^^^^^^^^^^^^^^^^
 
-The label code associated to the label. Please refer to the descriptions below.
+The label code associated with the label. Please refer to the descriptions below.
 
 The Label Code (LC) was introduced in 1977 by the IFPI (International Federation of Phonogram and Videogram Industries)
 in order to unmistakably identify the different record labels (see Introduction, Record labels) for rights purposes.

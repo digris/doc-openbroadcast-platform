@@ -4,11 +4,11 @@
 Users
 #####
 
-.. _user-introduction:
+.. _user-overview:
 
-************
-Introduction
-************
+********
+Overview
+********
 
 A User is any natural or legal person accessing Open Broadcast manually or mechanically.
 
