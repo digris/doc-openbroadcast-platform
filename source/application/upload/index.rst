@@ -68,8 +68,8 @@ the file.
 
 .. figure:: img/media-card-overview.png
 
-The appearance of the card and the information inside will vary depending on the result of the analysis that occurred
-during the upload. Visit the :ref:`uploading files <upload-new-upload-upload-file>` guide for more details.
+The appearance of the card may vary depending on the result of the analysis.
+Visit the :ref:`uploading files <upload-new-upload-upload-file>` guide for more details.
 
 Below the most common elements.
 
@@ -78,16 +78,14 @@ Header
 
 .. figure:: img/media-card-header.png
 
-   thumb turns 'up' as soon as mandatory fields are completed.
-
-It shows the original filename and audio format of the file (as displayed in the computer file browser).
+The original filename and audio format of the file (as displayed in the computer file browser).
 
 File metadata
 -------------
 
 .. figure:: img/media-card-metadata.png
 
-It show the information found in the metadata container of the file (as displayed on most audio players).
+The information found in the metadata container of the file (as displayed on most audio players).
 
 
 Mandatory information
@@ -141,6 +139,8 @@ To start a new upload session, open the **CONTENT** menu and click on **UPLOAD**
 Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
 `Terms & Conditions <https://www.openbroadcast.org/about/terms-and-conditions/>`__ and that you have read this
 :ref:`documentation <upload>` and understand how importing works.
+
+.. figure:: img/new-session-terms.png
 
 Click on **ADD FILES** to open the computer file browser and select the files or drag-n-drop the files into the white frame.
 
