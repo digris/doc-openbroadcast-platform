@@ -7,7 +7,6 @@
 Playlists
 #########
 
-
 .. _playlist-overview:
 
 ********
@@ -28,13 +27,11 @@ See also:
 
 * :ref:`Creating a playlist <playlist-how-to-create-playlist>`.
 
-
 .. _playlist-list:
 
 *********
 List view
 *********
-
 
 Accessing the list
 ==================
@@ -63,7 +60,6 @@ The available options are:
 * **Duration**: The duration of the playlist.
 * **Last Modified**: The last date the playlist profile was edited.
 * **Creation date**: The date the playlist profile was created.
-
 
 .. _playlist-list-filter:
 
@@ -103,7 +99,6 @@ Tags and filters also work in combination:
 
 Click again on any active tag or filter to deselect it and reset the result-set.
 
-
 .. _playlist-list-card:
 
 The Playlist card
@@ -120,7 +115,7 @@ Starting at the top, the information displayed are:
 * :ref:`Target duration <playlist-form-target-duration>`: The target duration of the playlist.
 * :ref:`H (History) <playlist-list-card-history>`: Shortcut to display the broadcast history of the playlist.
 * :ref:`Cover art <playlist-form-cover-art>`: The cover art of the playlist.
-* :ref:`Tags <playlist-form-tags>`: The tags associated to the playlist.
+* :ref:`Tags <playlist-form-tags>`: The tags associated with the playlist.
 * :ref:`Title <playlist-form-title>` / count: The title of the playlist / The number of times the playlist was broadcast.
 * :ref:`Series name <playlist-form-series-name>` /  :ref:`Series number <playlist-form-series-number>`: The series
   name / number of the playlist.
@@ -146,7 +141,6 @@ The available options are:
   *(it is displayed only if you are the creator of the playlist)*.
 * **Admin view**: *(Admin only)*.
 
-
 .. _playlist-list-card-history:
 
 The History tab
@@ -162,14 +156,21 @@ Click on the **H** to open the 'Emission matrix' panel.
 
 .. figure:: img/playlist-list-card-emission-matrix.png
 
-The 'Emission matrix' is composed of the following elements:
+The 'Emission matrix' displays:
 
-* **X axis**: The name of the days (28 days / 4 weeks).
-* **Y axis**: The dayparts (from 6 a.m. onwards)
+* **X-axis**: The name of the days (28 days / 4 weeks).
+* **Y-axis**: The dayparts (from 6 a.m. onwards)
 * **Purple cursor**: It highlights the current day.
 * **Green slots**: It highlights the :ref:`dayparts <playlist-form-best-dayparts>` defined by the user.
-* **Dark grey slots**: The current position the playlist is scheduled to broadcast.
+* **Dark grey slots**: The position the playlist is scheduled to broadcast.
 
+The 'Emission matrix' displays:
+
+* **X-axis**: The name of the days (28 days / 4 weeks).
+* **Y-axis**: The dayparts (from 6 a.m. onwards)
+* **Purple cursor**: It highlights the current day.
+* **Green slots**: It highlights the :ref:`dayparts <playlist-form-best-dayparts>` defined by the user.
+* **Light grey slots**: The position the playlist is scheduled to broadcast.
 
 .. _playlist-detail:
 
@@ -254,7 +255,6 @@ On the right side of the page are available the following options:
 
 Below are described the information open broadcast collect for a playlist.
 
-
 .. _playlist-form-general:
 
 General
@@ -272,7 +272,6 @@ Title
 
 The title of the playlist.
 
-
 .. _playlist-form-target-duration:
 
 Target duration
@@ -287,14 +286,12 @@ The target duration of the playlist. Select a value between 15 minutes and 240 m
 
   .. figure:: img/playlist-form-target-actual-duration-diff.png
 
-
 .. _playlist-form-description:
 
 Description
 -----------
 
 The description of the release.
-
 
 .. _playlist-form-cover-art:
 
@@ -348,7 +345,6 @@ The name of the series the playlist will be grouped under.
   Click on the matching profile to select it or on 'Close' to close the list and create a new profile.
 
   .. figure:: img/series-field-select-create.gif
-
 
 .. _playlist-form-series-number:
 
@@ -421,7 +417,6 @@ You can select up to 5 days.
 
 .. figure:: img/playlist-form-best-dayparts.png
 
-
 .. _playlist-form-best-season:
 
 ...Seasons
@@ -429,14 +424,12 @@ You can select up to 5 days.
 
 The best 'season' to play the playlist.
 
-
 .. _playlist-form-weather:
 
 ...Weather
 ----------
 
 The best 'weather' to play the playlist.
-
 
 .. _playlist-editor:
 
@@ -457,7 +450,6 @@ The available features are:
 * Quickly add more tracks using the :ref:`search field <playlist-editor-search-field>`.
 * Add :ref:`fade in / out effects <playlist-editor-fade>` or :ref:`cue points <playlist-editor-cue>` on the tracks.
 
-
 .. _playlist-editor-fade:
 
 Fade-In / Out
@@ -476,7 +468,6 @@ Fade-in / fade-out effects can be applied in one of the following ways:
 To listen the result, click on the play icon located on the left side of the waveform. When the track end, the player
 automatically play the next track in the list.
 
-
 .. _playlist-editor-cue:
 
 Cue-In / Out
@@ -494,7 +485,6 @@ Cue-in / cue-out effects can be applied in one of the following ways:
   Note the 'Actual' duration is automatically updated.
 
 To listen the result, click on the play icon located on the left side of the waveform.
-
 
 .. _playlist-editor-search-field:
 
@@ -529,13 +519,11 @@ To search for a jingle, repeat the steps described above leaving the **Search fo
 
   Note the 'Actual' duration is automatically updated.
 
-
 .. _playlist-how-to:
 
 *******
-How tos
+How-tos
 *******
-
 
 .. _playlist-how-to-create-playlist:
 
@@ -565,9 +553,8 @@ on **Back to detail view** to exit the form and return to the :ref:`playlist det
 
 See also:
 
-* :ref:`Adding tracks to playlists using the popup-player <popup-player-add-track-to-playlist>`.
+* :ref:`Adding tracks to playlists using the popup-player <media-player-add-track-to-existing-playlist>`.
 * :ref:`Converting a 'Private' playlist into 'Public' <playlist-how-to-transform-private-to-public>`.
-
 
 .. _playlist-how-to-transform-private-to-public:
 
@@ -581,7 +568,6 @@ To transform a 'Private' playlist into 'Public' :ref:`tags <playlist-form-tags>`
 Add some tags and save the form. Then click on **Make playlists public**.
 
 .. figure:: img/playlist-form-transform-private-to-public.png
-
 
 .. _playlist-how-to-transform-public-to-broadcast:
 
@@ -600,25 +586,7 @@ Once the requirements are met, click on **Make playlists broadcastable**.
 
 See also:
 
-* :ref:`Adding a playlist to the scheduler clipboard <playlist-how-to-add-playlist-to-clipboard>`.
-
-
-.. _playlist-how-to-add-playlist-to-clipboard:
-
-Adding a playlist to the scheduler clipboard
-============================================
-
-Go the :ref:`playlists list <playlist-list>` page, click on **more options** (3 dots) and then click on
-**Schedule for playout**.
-
-.. figure:: img/playlist-schedule-for-playout.png
-
-The playlist will be automatically added to the :ref:`scheduler clipboard <scheduler-clipboard>`.
-
-See also:
-
-* :ref:`Scheduling a playlist to broadcast <scheduler-how-to-schedule-playlist>`.
-
+* :ref:`Adding a playlist to the scheduler clipboard <scheduler-how-to-add-playlist-to-clipboard>`.
 
 .. _playlist-how-to-delete-playlist:
 

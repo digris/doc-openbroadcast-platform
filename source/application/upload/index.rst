@@ -78,7 +78,7 @@ Header
 
 .. figure:: img/media-card-header.png
 
-The original filename and audio format of the file (as displayed in the computer file browser).
+The original filename and file extension (as displayed in the computer file browser).
 
 File metadata
 -------------
@@ -123,7 +123,7 @@ See also:
 .. _upload-how-to:
 
 *******
-How tos
+How-tos
 *******
 
 

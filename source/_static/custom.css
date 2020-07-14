@@ -4,6 +4,10 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   font-weight: 300;
 }
 
+.wy-nav-top {
+  background: #6633CC;
+}
+
 .wy-nav-side {
   text-transform: uppercase;
   background-color: #6633CC;
@@ -30,7 +34,7 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 
 .wy-menu-vertical li.toctree-l1 a:hover {
   color: #fafafa;
-  background-color: rgba(65, 32, 129, 0.79);
+  background-color: #6c3dcc;
 }
 .wy-menu-vertical li.toctree-l1.current > a {
   border-bottom: none;
@@ -61,22 +65,22 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l3 > a {
   color: #000000;
-  background-color: gainsboro;
+  background-color: rgba(198, 178, 255, 0.9);
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l3 a:hover {
   color: #000000;
-  background-color: #ebebeb;
+  background-color: rgba(218, 205, 253, 0.9);
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l3.current > a {
   color: #000000;
-  background-color: #ebebeb;
+  background-color: rgba(218, 205, 253, 0.9);
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l4 a {
   padding: 0.4045em 0.245em 0.4045em 3.8045em;
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l4 > a {
   color: #000000;
-  background-color: #fafafa;
+  background-color: #ebebeb;
 }
 .wy-menu-vertical li .toctree-l2.current li.toctree-l4 a:hover {
   color: #000000;
@@ -144,6 +148,42 @@ ul.simple {
 
 em {
   font-size: 14px;
+}
+
+.rst-content .note {
+  border: 2px solid #35487e;
+  background-color: rgba(244, 251, 255, 0.9);
+}
+.rst-content .note .admonition-title {
+  background: #e7f2fa;
+  color: #35487e;
+}
+
+.rst-content .important {
+  border: 2px solid #0e6353;
+  background-color: rgba(233, 244, 240, 0.68);
+}
+.rst-content .important .admonition-title {
+  background: #d6ece8;
+  color: #0e6353;
+}
+
+.rst-content .hint {
+  border: 2px solid #0e6353;
+  background-color: rgba(233, 244, 240, 0.68);
+}
+.rst-content .hint .admonition-title {
+  background: #d6ece8;
+  color: #0e6353;
+}
+
+.rst-content .warning {
+  border: 2px solid #876447;
+  background-color: #fffaf3;
+}
+.rst-content .warning .admonition-title {
+  background: #f7e2cc;
+  color: #876447;
 }
 
 /*# sourceMappingURL=custom.css.map */

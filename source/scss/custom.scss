@@ -9,32 +9,50 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 ////////////////////////////////
 
 $obp-white: #fafafa;
+$obp-black: #000000;
+
+$obp-purple-1: rgba(218, 205, 253, 0.9);
+$obp-purple-2: rgba(198, 178, 255, 0.9);
+$obp-purple-3: rgba(116, 58, 232, 0.9);
+$obp-purple-4: rgba(116, 58, 232, 0.98);
+$obp-purple-5: #6c3dcc;
+$obp-purple-official: #6633CC;
 
 $obp-grey-1: #f5f5f5;
 $obp-grey-2: rgb(235, 235, 235);
 $obp-grey-3: rgb(220, 220, 220);
-//$obp-grey-3: rgba(207, 207, 207, 0.85);
-
-
-$obp-grey-bright: rgba(207, 207, 207, 0.85);
-$obp-grey-light: #f5f5f5;
-$obp-grey-medium: rgba(175, 175, 175, 0.55);
-$obp-grey-dark: rgba(223, 223, 223, 1);
-
-
-$obp-black: #000000;
-
-$obp-purple-bright: rgba(116, 58, 232, 0.9);
-$obp-purple-light: rgba(116, 58, 232, 0.98);
-$obp-purple-medium: rgba(65, 32, 129, 0.79);
-//$obp-purple-medium: rgba(102, 51, 204, 0.79);
-
-$obp-purple-official: #6633CC;
 
 $obp-green-official: #00BB00;
-$obp-green-medium: #00bb73;
-
 $obp-green-dark: #008000;
+
+// Admonition custom colors
+// Note
+$color-blue-1: rgba(244, 251, 255, 0.9);
+$color-blue-2: #e7f2fa;
+$color-blue-3: #c2daec;
+$color-blue-5: #35487e;
+// Important
+$color-green-1: rgba(233, 244, 240, 0.68);
+$color-green-2: #d6ece8;
+$color-green-3: #1abc9c;
+$color-green-5: #0e6353;
+
+$color-orange-1: #fffaf3;
+$color-orange-2: #f7e2cc;
+$color-orange-3: #f0b37e;
+$color-orange-5: #876447;
+
+$color-purple-1: rgba(244, 251, 255, 0.9);
+$color-purple-2: #e7f2fa;
+$color-purple-3: #c2daec;
+$color-purple-5: #35487e;
+
+// Mobile main nav
+////////////////////////////////
+
+.wy-nav-top {
+  background: $obp-purple-official;
+}
 
 
 //
@@ -85,7 +103,7 @@ $obp-green-dark: #008000;
   li.toctree-l1 {
     a:hover {
       color: $obp-white;
-      background-color: $obp-purple-medium;
+      background-color: $obp-purple-5;
     }
   }
 
@@ -114,19 +132,19 @@ $obp-green-dark: #008000;
   li.toctree-l2 {
     a {
       font-weight: 100;
-      background-color: $obp-purple-light;
+      background-color: $obp-purple-4;
       padding: .4045em 2.445em;
     }
 
     a:hover {
-      background-color: $obp-purple-bright;
+      background-color: $obp-purple-3;
     }
   }
 
   li .toctree-l2.current {
     > a {
       font-weight: 500;
-      background-color: $obp-purple-bright;
+      background-color: $obp-purple-3;
 
     }
 
@@ -137,27 +155,28 @@ $obp-green-dark: #008000;
 
       > a {
         color: $obp-black;
-        background-color: $obp-grey-3;
+        background-color: $obp-purple-2;
       }
 
       a:hover {
         color: $obp-black;
-        background-color: $obp-grey-2;
+        background-color: $obp-purple-1;
       }
     }
 
     li.toctree-l3.current > a {
       color: $obp-black;
-      background-color: $obp-grey-2;
+      background-color: $obp-purple-1;
     }
 
     li.toctree-l4 {
       a {
         padding: 0.4045em 0.245em .4045em 3.8045em;
       }
+
       > a {
         color: $obp-black;
-        background-color: $obp-white;
+        background-color: $obp-grey-2;
       }
 
       a:hover {
@@ -277,3 +296,50 @@ img {
 em {
   font-size: 14px;
 }
+
+// Admonitions
+//-----------------------------------
+// Note
+.rst-content .note {
+  border: 2px solid $color-blue-5;
+  background-color: $color-blue-1;
+
+  .admonition-title {
+    background: $color-blue-2;
+    color: $color-blue-5;
+  }
+}
+
+.rst-content .important {
+  border: 2px solid $color-green-5;
+  background-color: $color-green-1;
+
+  .admonition-title {
+    background: $color-green-2;
+    color: $color-green-5;
+  }
+
+}
+
+.rst-content .hint {
+  border: 2px solid $color-green-5;
+  background-color: $color-green-1;
+
+  .admonition-title {
+    background: $color-green-2;
+    color: $color-green-5;
+  }
+
+}
+
+.rst-content .warning {
+  border: 2px solid $color-orange-5;
+  background-color: $color-orange-1;
+
+  .admonition-title {
+    background: $color-orange-2;
+    color: $color-orange-5;
+  }
+
+}
+
