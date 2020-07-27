@@ -26,7 +26,7 @@ Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
 
 The module is composed of 2 elements:
 
-* The area where are listed the uploaded file(s) *(orange)*.
+* The area where the uploaded files are listed *(orange)*.
 * The summary of the current upload session *(blue)*.
 
 See also:
@@ -38,24 +38,16 @@ See also:
 File info card
 ==============
 
-While a file is uploaded, it is processed to extract the music information/metadata stored in it (i.e., ID3 container
-for mp3 files or Vorbis for Flac files).
-
-Besides, the system also generates an audio fingerprint for the file. The information will help to:
-
-* Manage and discover duplicates in the library.
-* Find matches on Musicbrainz, an open music encyclopedia that collects music metadata and makes it available to the
-  public.
-
-The 'info card' (blue) displays the information associated with each uploaded file.
+The 'info card' displays various information associated with each uploaded file.
 
 .. figure:: img/upload-media-card-list.png
 
-The card's appearance will vary depending on the processing result, below the most common one, which alerts that
-mandatory information is missing.
+The card's appearance will vary depending on the processing result (more information is available
+:ref:`here <upload-new-upload-upload-file>`),
+
+Below the most common one, which alerts that information about the recording is missing (yellow fields).
 
 .. figure:: img/upload-media-card-overview.png
-
 
 It is composed of the following elements:
 
@@ -69,16 +61,28 @@ The original filename and file extension (as displayed in the computer file brow
 File metadata
 -------------
 
-The information found in the file's metadata container (as displayed on most audio players).
+The meta-information about the recording found in the file's metadata container (i.e., ID3 for mp3 files or Vorbis
+for Flac files).
 
 .. figure:: img/upload-media-card-metadata.png
 
 Mandatory information
 ---------------------
 
-The information you need to complete to continue import the file.
+The necessary information about the recording (the content of the audio file).
 
 .. figure:: img/upload-media-card-mandatory-fields.png
+
+Which is:
+
+* **Title:** The title of the recording.
+* **Release:** The title of the release the recording appears on.
+* **Artist:** The name of the artist(s) the recording is primarily credited.
+
+.. note::
+
+   You can add more information later using the specific :ref:`release <release-form>`, :ref:`artist <artist-form>`,
+   :ref:`track <track-form>`, or :ref:`label <label-form>`  forms (i.e., cover art, record label, additional artists, etc.).
 
 Actions
 -------
@@ -101,7 +105,7 @@ Summary panel
 =============
 
 The state of the current upload session automatically updates whenever the information is completed, or an action is
-taken on the file(s).
+taken on the file(s) in the review/import area.
 
 .. figure:: img/upload-summary-upload-session.png
    :width: 320px
@@ -109,12 +113,29 @@ taken on the file(s).
 
 The summary includes:
 
-* **Ready to import:** The file(s) ready to be imported in the library.
-* **Import completed:** The file(s) imported in the library.
-* **Duplicates:** The file(s) recognized as :ref:`a possible duplicate <review-possible-duplicate>`.
-* **Processing:** The file(s) has been processed (placed in the import queue).
-* **Information needed:** The file(s) missing :ref:`mandatory information <review-mandatory-information>`.
-* **Errors:** The errors occurred uploading / importing file(s).
+* **Ready to import:** The number of files ready to be imported in the library.
+* **Import completed:** The number of files imported in the library.
+* **Duplicates:** The number of files recognized as :ref:`a possible duplicate <review-possible-duplicate>`.
+* **Processing:** The number of files that have been processed (placed in the import queue).
+* **Information needed:** The number of files missing :ref:`mandatory information <review-mandatory-information>`.
+* **Errors:** The number of errors occurred in uploading files / importing recordings.
+
+Note that sessions can be interrupted and resumed later. The history is available on the **UPLOAD** page under **MY UPLOADS**.
+
+.. figure:: img/main-nav-content-upload.png
+
+.. figure:: img/upload-my-uploads.png
+
+The following information is available for each session:
+
+* **Imported x of y**: The number of recordings imported | The number of recordings uploaded.
+* **Warnings**: Generic warnings about the import session (duplicates found, mandatory information not completed).
+* **Created items**: The number of :ref:`Releases <release-detail>`, :ref:`Tracks <track-detail>`,
+  and :ref:`Artists <artist-detail>` profiles the system created in the library for the imported recordings.
+* **Creation date**: The date the upload session was created (right side).
+
+To reopen a session, click on **Imported: x of y** or on the creation date.
+
 
 .. _upload-how-to:
 
@@ -145,38 +166,59 @@ Click on **ADD FILES** to open the computer file browser and select the files or
 
 .. figure:: img/upload-how-to-add-files.png
 
-Upload will starts automatically.
+The upload will start automatically, and the files will be listed one after the other in the area below.
+
+See also:
+
+* :ref:`Reviewing the files information <upload-new-upload-review-file>`
+* :ref:`Importing recordings in the library <upload-import-file>`
 
 .. _upload-new-upload-review-file:
 
 Reviewing the files information
 ===============================
 
-The appearance of the file 'info card' will vary depending on the processing result, below the most common cases:
+While a file is uploaded, it is processed to extract the meta-information it stores about the recording. Besides,
+the system also generates an audio fingerprint (`Acoustic ID <https://acoustid.org/>`__). The information will help to:
 
-* Mandatory information is missing.
+* Manage and discover duplicates in the library.
+* Find matches on `MusicBrainz <https://musicbrainz.org/>`__, an open music encyclopedia that collects music metadata and
+  makes it available to the public.
 
-  .. figure:: img/upload-media-card-how-to-review-mandatory-information.png
+.. hint::
 
-     Read more about in the section: :ref:`Completing mandatory information <review-mandatory-information>`.
+   We strongly encourage you to download and tag your files using `Picard <https://picard.musicbrainz.org/>`__,
+   the desktop music tagger by MusicBrainz.
 
-* The system recognized the file as a duplicate (it may already exist in the library).
+   The recordings will be automatically uploaded and imported in the library (no need to review the information).
 
-  .. figure:: img/upload-media-card-how-to-review-possible-duplicate.png
+The appearance of the :ref:`files(s) info card <upload-media-info-card>` will vary depending on the processing result,
+below the most common:
 
-     Read more about in the section: :ref:`Managing duplicate files <review-possible-duplicate>`.
+Mandatory information about the recording is missing.
 
-* The audio fingerprint of the file matches with a recording on `Musicbrainz <https://musicbrainz.org/>`_.
+.. figure:: img/upload-media-card-how-to-review-mandatory-information.png
 
-  .. figure:: img/upload-media-card-how-to-review-match-on-musicbrainz.png
+   Read more about in the section: :ref:`Completing mandatory information <review-mandatory-information>`.
 
-     Read more about in the section: :ref:`Selecting a match on Musicbrainz <review-match-on-musicbrainz>`.
+The audio fingerprint matches one or more recordings on `Musicbrainz <https://musicbrainz.org/>`_.
 
-* The file has been automatically imported into the library because it was pre-tagged with `Picard <https://picard.musicbrainz.org/>`_.
+.. figure:: img/upload-media-card-how-to-review-match-on-musicbrainz.png
 
-  .. figure:: img/upload-media-card-how-to-review-pre-tagged-file.png
+   Read more about in the section: :ref:`Selecting a match on Musicbrainz <review-match-on-musicbrainz>`.
 
-     Read more about in the section: :ref:`Files pre-tagged using Picard <review-pre-tagged-file>`.
+The system recognized the file as a duplicate (the recording may already exist in the library).
+
+.. figure:: img/upload-media-card-how-to-review-possible-duplicate.png
+
+   Read more about in the section: :ref:`Managing duplicate files <review-possible-duplicate>`.
+
+The recording has been automatically imported into the library because the file was pre-tagged with
+`Picard <https://picard.musicbrainz.org/>`_.
+
+.. figure:: img/upload-media-card-how-to-review-pre-tagged-file.png
+
+   Read more about in the section: :ref:`Files pre-tagged using Picard <review-pre-tagged-file>`.
 
 .. _review-mandatory-information:
 
@@ -187,19 +229,8 @@ Mandatory information is used by the system to import and organize the recording
 
 .. figure:: img/upload-media-card-how-to-review-mandatory-information.png
 
-The information is:
-
-* **Title:** The title of the recording.
-* **Release:** The title of the release the recording appears on.
-* **Artist:** The name of the artist(s) the recording is primarily credited.
-
-The fields can be completed manually, by typing in it, or automatically, populating them with the file metadata
+The fields can be completed manually, by typing in it, or automatically, populating them with the metadata available
 (read more about in the section: :ref:`Filling mandatory fields with metadata <complete-mandatory-with-metadata>`).
-
-.. note::
-
-   You can add more information later using the specific :ref:`release <release-form>`, :ref:`artist <artist-form>`,
-   :ref:`track <track-form>`, or :ref:`label <label-form>`  forms (i.e., cover art, record label, additional artists, etc.).
 
 .. _complete-mandatory-manually:
 
@@ -216,33 +247,32 @@ library whose name matches the current text typed in.
 .. figure:: img/upload-media-card-release-field-auto-completion.png
 
 This feature helps you to check if a release or artist associated with the recording is already available in the library.
-
-The following examples show how to create a new release (not available in the library) and how to assign an artist that
-is already in the library. The procedures are interchangeable.
+The following examples show how to create a new release profile (not available in the library) and how to assign the
+recording to an artist that is already in the library. The procedures are interchangeable.
 
 .. _create-release-for-media:
 
-**Creating a new release profile**
+**Creating a new release profile for the recording**
 
-When the auto-completion opens up, click outside the list to close it.
+Start typing the title in the field. When the auto-completion opens up, click outside the list to close it.
 
 .. figure:: img/upload-media-card-how-to-create-release.gif
 
 The alert **+ Create** informs that it will create a new release profile.
 
-If the recordings in the current upload session are part of the same release (i.e., an entire album), type the 'Release'
-title only in one card and click on **Apply to all** to complete the field on the other cards at one go.
+If the recordings in the current upload session belong to the same release (i.e., an entire album), click on
+**Apply to all** to auto-complete this field in the other cards.
 
 .. figure:: img/upload-media-card-how-to-apply-release-to-all.png
 
 .. warning::
 
    We are aware of a bug where the system assigns the recording to the existing releases without letting you create
-   a new profile. To get around the problem, check the box 'Force creation.'
+   a new profile. To get around the problem, check the box **Force creation**.
 
    .. figure:: img/upload-media-card-how-to-force-creation-01.png
 
-   Note the alert switches from **Assigned** (wrong) to **+ Create** (correct).
+   Note the alert switched from **Assigned** (wrong) to **+ Create** (correct).
 
    .. figure:: img/upload-media-card-how-to-force-creation-02.png
 
@@ -251,23 +281,23 @@ title only in one card and click on **Apply to all** to complete the field on th
 
 .. _assign-artist-to-media:
 
-**Assigning an artist profile**
+**Assigning the recording to an artist in the library**
 
-When the auto-completion opens up, click on the matching artist to select it.
+Start typing the name in the field. When the auto-completion opens up, click on the matching artist to select it.
 
 .. figure:: img/upload-media-card-how-to-assign-artist.gif
 
 The alert **Assigned** confirms the assignment. Move the cursor over it to display the artist's information.
 
 If the recordings in the current upload session are credited to the same artist (i.e., an entire album by artist 'X'),
-type the 'Artist' name only in one card and click on **Apply to all** to complete the field on the other cards at one go.
+click on **Apply to all** to auto-complete this field in the other cards.
 
 .. figure:: img/upload-media-card-how-to-apply-artist-to-all.png
 
 
 See also:
 
-* :ref:`Importing files in the library<upload-import-file>`
+* :ref:`Importing recordings in the library <upload-import-file>`
 
 
 .. _complete-mandatory-with-metadata:
@@ -279,16 +309,18 @@ Click anywhere on the 'File metadata' element to transfer the information to the
 
 .. figure:: img/upload-media-card-how-to-select-metadata.png
 
-    The green checkmark confirms the transfer was successful.
+The green checkmark confirms the transfer was successful.
 
-While transferring the information, the system will check if an artist or release with the same name is already in the
-library and assign it. Verify the accuracy of the assignments and correct where needed.
+.. note::
+
+   While transferring the information, the system will check if an artist or release with the same name is already in the
+   library and assign it. Verify the accuracy of the assignments and correct where needed.
 
 See also:
 
-* :ref:`Creating a new release profile <create-release-for-media>`
-* :ref:`Assigning an artist in the library <assign-artist-to-media>`
-* :ref:`Importing files in the library<upload-import-file>`
+* :ref:`Creating a new release profile for the recording<create-release-for-media>`
+* :ref:`Assigning the recording to an artist in the library <assign-artist-to-media>`
+* :ref:`Importing recordings in the library<upload-import-file>`
 
 
 .. _review-match-on-musicbrainz:
@@ -296,18 +328,18 @@ See also:
 Choosing a match on MusicBrainz
 ===============================
 
-'Possible releases' lists all recordings found on MusicBrainz matching with the audio fingerprint generated for the file
-(`Acoustic ID <https://acoustid.org/>`_).
+'Possible releases' lists all recordings found on MusicBrainz, whose audio fingerprint (`Acoustic ID <https://acoustid.org/>`_)
+matches the one generated for the file.
 
-Click on a match to transfer the information.
+Click on a match to transfer the information to the respective mandatory fields.
 
 .. figure:: img/upload-media-card-how-to-select-match-on-musicbrainz.png
 
-    A green checkmark will highlight the chosen match.
+The green checkmark confirms the transfer was successful, and it highlights the currently chosen match.
 
 See also:
 
-* :ref:`Importing files in the library<upload-import-file>`
+* :ref:`Importing recordings in the library<upload-import-file>`
 
 
 .. _review-possible-duplicate:
@@ -328,57 +360,51 @@ After clicking on **RE-IMPORT FILE**, you may need to :ref:`review the mandatory
 
 .. hint::
 
-  To verify the detection's accuracy, right-click on the title of the 'possible match' and select 'open in a new tab.'
-  Check the duration or listen to the audio file to ensure it was not a 'False Positive' case.
+  To verify the detection's accuracy, right-click on the title of the **Possible duplicate**, and select 'open in a new tab.'
+  It will open the detailed view of the recording that's already in the library. Check that the duration matches or
+  listen to the recording to ensure it was not a *False Positive* case.
 
 .. _review-pre-tagged-file:
 
 Pre-tagged file
 ---------------
 
-File(s) previously tagged using the Picard tag editor are automatically imported in the library (no additional steps required).
+File(s) previously tagged using `Picard <https://picard.musicbrainz.org/>`__ are automatically imported
+in the library (no additional steps required).
 
 .. figure:: img/upload-media-card-how-to-review-pre-tagged-file.png
 
-`Picard <https://picard.musicbrainz.org/>`__ is a desktop music tagger by `Musicbrainz <https://musicbrainz.org/>`__,
-which insert identifiers
-(`Musicbrainz ID <https://musicbrainz.org/doc/MusicBrainz_Identifier>`__) in the file's metadata container.
+`Picard <https://picard.musicbrainz.org/>`__ is a desktop music tagger by `MusicBrainz <https://musicbrainz.org/>`__,
+which in addition to descriptive information, inserts unique identifiers
+(`MusicBrainz IDs <https://musicbrainz.org/doc/MusicBrainz_Identifier>`__) in the file's metadata container.
 
 .. figure:: img/mbrainz-picard-tag-editor.png
 
-The system uses these identifiers to find matches and keep organized the recordings in the library.
+While the file is uploaded/processed, the system read and uses these identifiers to find matches and to organize the
+recordings in the library automatically.
 
 .. _upload-import-file:
 
-Importing files
-===============
+Importing recordings in the library
+===================================
 
-To import a file in the library, click on the **CONTINUE IMPORT** button within the file info card.
+To import recordings individually, click on **CONTINUE IMPORT** within the info card.
 
 .. figure:: img/upload-media-card-footer-functions.png
 
-The file will be added to the import queue (highlighted in blue) and then automatically imported.
+The recording will be automatically added to the import queue (highlighted in blue) and then imported into the library
+(highlighted in green).
 
 .. figure:: img/upload-media-card-how-to-import-file.png
 
-  The green color confirms the import was successful.
 
-.. warning::
+The green color confirms the import was successful. At this point, you can:
 
-  We are aware of a bug where clicking multiple times on **CONTINUE IMPORT** will import numerous copies of the recording.
-  To get around the problem, simply wait for a little after clicking it the first time. Click again on it only when you
-  are sure the recording is not getting imported.
-
-At this point you can:
-
-* Click on the title to visit the :ref:`track profile <track-detail>` in the library.
+* Click on the title to visit the recording's :ref:`track profile <track-detail>` in the library.
 * Click on the artist's name to visit the :ref:`artist profile <artist-detail>` in the library.
 * Click on the release title to visit the :ref:`release profile <release-detail>` in the library.
-* Continue to complete the information on the remaining files in the current upload session.
+* Continue to review and import the remaining files in the current upload session.
 
-.. hint::
+To import all recordings at one go, review each file/recording information, and then click on **Import all**.
 
-   Review each file's information and then click on **Import all** to import all files at one go.
-
-   .. figure:: img/upload-how-to-import-all.png
-
+.. figure:: img/upload-how-to-import-all.png
