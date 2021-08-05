@@ -14,9 +14,15 @@ $obp-black: #000000;
 $obp-purple-1: rgba(218, 205, 253, 0.9);
 $obp-purple-2: rgba(198, 178, 255, 0.9);
 $obp-purple-3: rgba(116, 58, 232, 0.9);
-$obp-purple-4: rgba(116, 58, 232, 0.98);
-$obp-purple-5: #6c3dcc;
-$obp-purple-official: #6633CC;
+//$obp-purple-4: rgba(116, 58, 232, 0.98);
+//$obp-purple-5: #6c3dcc;
+//$obp-purple-official: #6633CC;
+
+$obp-purple-3: rgb(156, 132, 219);
+$obp-purple-4: rgb(144, 118, 214);
+$obp-purple-5: rgb(126, 97, 207);
+$obp-purple-official: rgb(110, 77, 202);
+
 
 $obp-grey-1: #f5f5f5;
 $obp-grey-2: rgb(235, 235, 235);
@@ -102,7 +108,7 @@ $color-purple-5: #35487e;
 
   li.toctree-l1 {
     a:hover {
-      color: $obp-white;
+      //color: $obp-white;
       background-color: $obp-purple-5;
     }
   }
@@ -121,7 +127,7 @@ $color-purple-5: #35487e;
       //padding: .4045em 3.445em;
 
       font-weight: 100;
-      color: $obp-white;
+      //color: $obp-white;
       border-right: 1px solid $obp-purple-official;
     }
   }

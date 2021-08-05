@@ -2048,3 +2048,25 @@ The url of the label page on other online platforms.
 .. figure:: img/label-form-relations.png
 
 To remove a url / link click on the respective 'Delete' check-box and save the form.
+
+.. _library-how-to:
+
+*******
+How-tos
+*******
+
+.. _library-how-to-reassign-track:
+
+Reassigning a track
+===================
+
+To reassign a track, for example, to a different release, click on the three dots beside the track covert art
+and then on 'Edit'.
+
+In the edit form, change the release title following :ref:`these instructions <track-form-release-title>`.
+Once done, click on SAVE to apply the changes.
+
+The track will now appear under the new release.
+
+The procedure to reassign the track to a different artist is identical; modify the
+:ref:`artist name <track-form-primary-artist>` instead and save the form.

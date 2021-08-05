@@ -134,10 +134,6 @@ The 'Emission matrix' displays:
 * **Green slots**: It highlights the :ref:`dayparts <playlist-form-best-dayparts>` defined by the user.
 * **Light grey slots**: The position the playlist is scheduled to broadcast.
 
-A color palette allows modifying the color of the playlist on the grid.
-
-.. figure:: img/scheduler-emission-panel-color-palette.png
-
 **REMOVE EMISSION** removes the emission from the calendar grid.
 
 .. figure:: img/scheduler-emission-panel-remove-emission.png
@@ -216,34 +212,3 @@ The playlist is now removed.
 .. important::
 
    Playlists that were broadcast cannot be removed.
-
-.. _scheduler-how-to-change-color-of-playlist:
-
-Changing the color of a playlist
-================================
-
-Move the cursor over the 'colors' menu to open it and click on a different color.
-
-.. figure:: img/scheduler-how-to-change-playlist-color-01.png
-
-The new color will apply automatically to the next playlist(s) that will be dragged and dropped on the grid.
-
-.. figure:: img/scheduler-how-to-change-playlist-color-02.png
-
-You can also change the color of a playlist at a later stage.
-
-Double click on the title of the playlist to open the emission panel.
-
-.. figure:: img/scheduler-emission-panel-open-from-grid.png
-
-Click on a different color.
-
-.. figure:: img/scheduler-how-to-change-playlist-color-from-emission-panel-01.png
-
-   Note the background of the header will change to the new color.
-
-Click on **CLOSE** (ESC) to close the emission panel.
-
-.. figure:: img/scheduler-how-to-change-playlist-color-from-emission-panel-02.png
-
-The color has been changed.
