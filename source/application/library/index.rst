@@ -2060,13 +2060,35 @@ How-tos
 Reassigning a track
 ===================
 
-To reassign a track, for example, to a different release, click on the three dots beside the track covert art
-and then on 'Edit'.
+The reasons you may want to reassign a track to a different release are mainly two:
+
+#. The system wrongly assigned it to a release with an identical title during the import.
+#. A user assigned or moved it to a wrong release.
+
+.. figure:: img/track-how-to-reassign-track-01.png
+
+   Track assigned to a wrong release (identical title)
+
+To reassign it, click on the three dots beside the play icon and then on 'Edit.'
+
+.. figure:: img/track-how-to-reassign-track-02.png
 
 In the edit form, change the release title following :ref:`these instructions <track-form-release-title>`.
-Once done, click on SAVE to apply the changes.
 
-The track will now appear under the new release.
+.. figure:: img/track-how-to-reassign-track-03.png
 
-The procedure to reassign the track to a different artist is identical; modify the
+If needed, also adjust the track number according to the 'new' release tracklist.
+
+Once done, click on **SAVE** to apply the changes.
+
+That's it. You can verify the assignment by clicking on the release title inside the track card to open
+the release detail view.
+
+.. figure:: img/track-how-to-reassign-track-04.png
+
+The track will now appear in the tracklist of the new release.
+
+.. figure:: img/track-how-to-reassign-track-05.png
+
+The procedure to reassign a track to a different artist is identical; modify the
 :ref:`artist name <track-form-primary-artist>` instead and save the form.

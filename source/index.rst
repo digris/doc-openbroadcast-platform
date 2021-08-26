@@ -7,9 +7,28 @@ Welcome to open broadcast platform's documentation
 ==================================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
+    :caption: Network
 
-    application/index
+    application/users/index
+    application/stations/index
+    application/activities/index
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Content
+
+    application/library/index
+    application/playlists/index
+    application/upload/index
+    application/download/index
+    application/popup-player/index
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Program
+
+    application/scheduler/index
 
 Quick links
 ==================

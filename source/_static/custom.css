@@ -1,93 +1,122 @@
-/* Generic typography setting for open broadcast */
+/* -----------------------------------------------------------------------------
+   Custom styles for the open broadcast documentation
+   -------------------------------------------------------------------------- */
+/* Colors
+-------------------------------------------------*/
+/* Typography
+-------------------------------------------------*/
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #5e5d60;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+h1 {
+  color: #008000;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 150%;
+}
+
+em {
+  font-size: 14px;
+}
+
+/* Mobile main nav
+-------------------------------------------------*/
 .wy-nav-top {
   background: #6e4dca;
 }
 
-.wy-nav-side {
-  text-transform: uppercase;
-  background-color: #6e4dca;
-}
-.wy-nav-side .icon-home {
-  text-transform: lowercase;
-}
-.wy-nav-side a {
-  color: #fafafa;
-}
-.wy-nav-side a:before {
-  display: none;
-}
-
+/* Side nav search field
+-------------------------------------------------*/
 .wy-side-nav-search {
-  background-color: #6e4dca;
+  background: #f5f5f5;
 }
 .wy-side-nav-search input[type=text] {
   width: 100%;
   border-radius: 0;
   padding: 6px 12px;
-  border-color: #6e4dca;
+  font-size: 18px;
+  border-color: #ebebeb;
 }
 
+/* Side nav menu
+-------------------------------------------------*/
+.wy-nav-side {
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  border-right: 1px solid gainsboro;
+}
+.wy-nav-side .icon-home {
+  text-transform: lowercase;
+  color: #6e4dca;
+}
+.wy-nav-side a:before {
+  display: none;
+}
+
+.wy-menu-vertical li.toctree-l1 {
+  margin-top: 4px;
+}
+.wy-menu-vertical li.toctree-l1 a {
+  color: #6e4dca;
+}
 .wy-menu-vertical li.toctree-l1 a:hover {
-  background-color: #7e61cf;
+  color: #6e4dca;
+  background-color: #ebebeb;
+}
+.wy-menu-vertical li.toctree-l1.current {
+  font-weight: bold;
 }
 .wy-menu-vertical li.toctree-l1.current > a {
   border-bottom: none;
   border-top: none;
-  font-weight: 100;
-  color: #fafafa;
-  background-color: #6e4dca;
-}
-.wy-menu-vertical li.toctree-l1.current a {
-  font-weight: 100;
-  border-right: 1px solid #6e4dca;
-}
-.wy-menu-vertical li.toctree-l2 a {
-  font-weight: 100;
-  background-color: #9076d6;
-  padding: 0.4045em 2.445em;
-}
-.wy-menu-vertical li.toctree-l2 a:hover {
-  background-color: #9c84db;
-}
-.wy-menu-vertical li .toctree-l2.current > a {
-  font-weight: 500;
-  background-color: #9c84db;
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l3 a {
-  padding: 0.4045em 3.245em;
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l3 > a {
-  color: #000000;
-  background-color: rgba(198, 178, 255, 0.9);
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l3 a:hover {
-  color: #000000;
-  background-color: rgba(218, 205, 253, 0.9);
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l3.current > a {
-  color: #000000;
-  background-color: rgba(218, 205, 253, 0.9);
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l4 a {
-  padding: 0.4045em 0.245em 0.4045em 3.8045em;
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l4 > a {
-  color: #000000;
-  background-color: #ebebeb;
-}
-.wy-menu-vertical li .toctree-l2.current li.toctree-l4 a:hover {
-  color: #000000;
+  color: #6e4dca;
   background-color: #f5f5f5;
 }
+.wy-menu-vertical li.toctree-l2 a {
+  background-color: #f5f5f5;
+}
+.wy-menu-vertical li .toctree-l2.current > a {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3 > a {
+  background-color: #f5f5f5;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3 a:hover {
+  background-color: #ebebeb;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l3.current > a {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l4 > a {
+  background-color: #f5f5f5;
+}
+.wy-menu-vertical li .toctree-l2.current li.toctree-l4 > a:hover {
+  background-color: #ebebeb;
+}
 .wy-menu-vertical li .toctree-l2.current li.toctree-l4.current > a {
+  font-weight: bold;
   background-color: #f5f5f5;
 }
 
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+  color: #0e6353;
+}
+
+/* Page content
+-------------------------------------------------*/
 .wy-nav-content {
   max-width: 1000px;
   background-color: #f5f5f5;
@@ -101,55 +130,40 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   background-color: #f5f5f5;
 }
 
-h1, h2, h3, h4, h5 {
-  color: #008000;
+.wy-breadcrumbs {
+  display: none;
 }
 
-h1, h2 {
-  text-transform: uppercase;
+/* Page toctree list
+-------------------------------------------------*/
+.rst-content .toctree-wrapper p.caption {
+  color: #5e5d60;
 }
 
-h3 {
-  text-transform: uppercase;
-}
-
-h4 {
-  margin-top: 25px;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 18px;
+.rst-content .toctree-wrapper ul li, article ul li {
+  list-style: circle;
+  color: #6e4dca;
 }
 
 .toctree-wrapper {
   text-transform: uppercase;
 }
-
-ul.simple {
-  margin-top: 5px;
+.toctree-wrapper ul li ::marker {
+  color: #6e4dca;
 }
 
-.caption-text {
-  font-size: 16px;
-}
-
+/* Page list
+-------------------------------------------------*/
 .section ul li {
-  font-size: 18px;
-  margin-top: 4px;
   margin-bottom: 8px;
 }
 .section ol li {
-  font-size: 18px;
   margin-bottom: 8px;
 }
 
-em {
-  font-size: 14px;
-}
-
+/* Admonitions (alerts)
+-------------------------------------------------*/
 .rst-content .note {
-  border: 2px solid #35487e;
   background-color: rgba(244, 251, 255, 0.9);
 }
 .rst-content .note .admonition-title {
@@ -158,7 +172,6 @@ em {
 }
 
 .rst-content .important {
-  border: 2px solid #0e6353;
   background-color: rgba(233, 244, 240, 0.68);
 }
 .rst-content .important .admonition-title {
@@ -167,7 +180,6 @@ em {
 }
 
 .rst-content .hint {
-  border: 2px solid #0e6353;
   background-color: rgba(233, 244, 240, 0.68);
 }
 .rst-content .hint .admonition-title {
@@ -176,12 +188,21 @@ em {
 }
 
 .rst-content .warning {
-  border: 2px solid #876447;
   background-color: #fffaf3;
 }
 .rst-content .warning .admonition-title {
   background: #f7e2cc;
   color: #876447;
+}
+
+/* Buttons
+-------------------------------------------------*/
+.btn-neutral {
+  color: #6e4dca !important;
+  border: 1px solid #6e4dca;
+}
+.btn-neutral:hover {
+  background-color: gainsboro !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

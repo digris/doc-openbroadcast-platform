@@ -10,7 +10,7 @@ Upload
 Overview
 ********
 
-The upload module allows you to upload and import recordings (audio files) in the library.
+The upload module allows you to upload and import audio files (recordings) in the library.
 
 To access it, open the **CONTENT** menu and click on **UPLOAD**.
 
@@ -22,12 +22,12 @@ Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
 
 .. figure:: img/upload-how-to-accept-terms.png
 
-.. figure:: img/upload-main-view-overview.png
-
 The module is composed of 2 elements:
 
 * The area where the uploaded files are listed *(orange)*.
 * The summary of the current upload session *(blue)*.
+
+.. figure:: img/upload-main-view-overview.png
 
 See also:
 
@@ -158,11 +158,20 @@ Click on **ACCEPT TERMS & UPLOAD MUSIC** to confirm that you agree to our
 
 .. figure:: img/upload-how-to-accept-terms.png
 
-Click on **ADD FILES** to open the computer file browser and select the files or drag-n-drop them into the white frame.
+.. note::
+
+   Some notes before you start uploading:
+
+   * Currently supported audio formats are mp3, m4a, wav, ogg and flac.
+   * wav and flac formats with bit depth above 24-bit or sampling frequency above 48kHz are not fully supported.
+   * The duration of an audio file must not exceed 2 hours.
 
 .. warning::
 
-   Currently supported audio formats are mp3, m4a, wav, ogg and flac.
+   Some wav files exported from pro-tools might cause issues.
+   We recommend converting them to flac using tools like `freac <https://www.freac.org/>`__ and upload the flac version.
+
+Click on **ADD FILES** to open the computer file browser and select the files or drag-n-drop them into the white frame.
 
 .. figure:: img/upload-how-to-add-files.png
 

@@ -14,12 +14,11 @@ A User is any natural or legal person accessing Open Broadcast manually or mecha
 
 UNDER CONSTRUCTION
 
-
 .. _user-list:
 
-**********
-Users list
-**********
+*********
+List view
+*********
 
 UNDER CONSTRUCTION
 

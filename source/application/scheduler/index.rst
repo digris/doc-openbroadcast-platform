@@ -17,13 +17,13 @@ To access it, open the **PROGRAM** menu and click on **SCHEDULER**.
 
 .. figure:: img/main-nav-program-scheduler.png
 
-.. figure:: img/scheduler-main-view-overview.png
-
 It is composed of three elements:
 
 * The :ref:`calendar navigation menu <scheduler-calendar-nav-menu>` *(orange)*
 * The :ref:`calendar grid <scheduler-calendar-grid>` *(green)*
 * The :ref:`playlists clipboard <scheduler-clipboard>` *(blue)*
+
+.. figure:: img/scheduler-main-view-overview.png
 
 .. _scheduler-calendar-nav-menu:
 
@@ -42,14 +42,9 @@ The available options are:
 * **7 Days** - **14 Days** - **28 Days**: Change how many days to display.
 * **Reset**: Reset settings to the default values.
 * **15** - **30**: Change the grid steps from 15 to 30 minutes.
-* **Colors**: Change the playlist's glow on the grid (it does not affect the playlists already scheduled).
 * **FS**: Switch to full screen (click again on it to reset the view to default settings).
 * **Day >**: Move one day forward.
 * **Week >**: Move one week forward.
-
-See also:
-
-* :ref:`Changing the color of a playlist on the grid <scheduler-how-to-change-color-of-playlist>`
 
 .. _scheduler-calendar-grid:
 
@@ -153,7 +148,6 @@ See also:
 
 * :ref:`Scheduling a playlist <scheduler-how-to-schedule-playlist>`
 * :ref:`Unscheduling a playlist <scheduler-how-to-unschedule-playlist>`
-* :ref:`Changing the color of a playlist on the grid <scheduler-how-to-change-color-of-playlist>`
 
 .. _scheduler-how-to:
 
