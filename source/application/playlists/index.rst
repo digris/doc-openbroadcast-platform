@@ -18,8 +18,8 @@ On the platform, there are three types of playlists:
 
 * **Private**: The playlist is only visible to the creator.
 * **Public**: The playlist is visible to all the users, and it appears in the :ref:`playlists list <playlist-list>`.
-* **Broadcast ready**: The playlist is visible to all the users, it appears in the :ref:`playlists list <playlist-list>`,
-  and it can be :ref:`scheduled to broadcast <scheduler-how-to-schedule-playlist>`.
+* **Broadcast ready**: The playlist is visible to all the users; it appears in the :ref:`playlists list <playlist-list>`
+  and can be :ref:`scheduled to broadcast <scheduler-how-to-schedule-playlist>`.
 
 See also:
 
@@ -32,19 +32,30 @@ See also:
 List view
 *********
 
-Browsing the list
-=================
+The list view displays all playlists created by the users.
 
-To access the list of playlists, open the **CONTENT** menu, and click on **PLAYLISTS**.
+To access it, open the **CONTENT** menu, and click on **PLAYLISTS**.
 
 .. figure:: img/content-sub-nav-playlists.png
 
-By default, the list is sorted by **Creation date** (descending), the newly created playlist is displayed on the top-left
-side of the list.
+Note that search results are paginated (24 items per page). You can use the pagination controls above the list to
+navigate through the results pages.
+
+The **PLAY ALL** and **QUEUE ALL** buttons allow you to play/queue all playlists in the list at once.
+
+See also:
+
+* :ref:`The popup player <popup-player>`
+
+Sorting the list
+================
+
+By default, the playlists are sorted by **Creation date** (descending), the newly created playlist is
+displayed on the top-left side of the list.
 
 .. figure:: img/playlist-list-order-by-creation-date.png
 
-To change the ordering parameter, click on **Ordering** to open the menu and click on a different option to select it.
+To change the ordering parameter, click on **Ordering** to open the menu and select a different option.
 
 .. figure:: img/playlist-list-order-by-name.png
 
@@ -60,6 +71,7 @@ The available options are:
 * **Last Modified**: The last date the playlist profile was edited.
 * **Creation date**: The date the playlist profile was created.
 
+
 .. _playlist-list-filter:
 
 Filtering the list
@@ -67,21 +79,23 @@ Filtering the list
 
 You can filter the list by tags and specific properties associated with the playlists.
 
-**BY TAGS**
+By tags
+-------
 
 Click on **TAGS** to open the tag cloud and then on a tag to select it.
 
 .. figure:: img/playlist-list-tags.png
 
-The page automatically reloads with the filtered results every time you choose, add, or remove a tag.
+The page automatically reloads the filtered results every time you select, add, or remove a tag.
 
-**BY SPECIFIC PROPERTY**
+By specific property
+--------------------
 
 Click on the **Filter: <property>** to open the menu, then click on one or more values in the list.
 
 .. figure:: img/playlist-list-filters.png
 
-The page automatically reloads with the filtered results every time you select, add, remove values from a specific
+The page automatically reloads the filtered results every time you select, add, remove values from a specific
 filter, or add other filters/properties to the query.
 
 You can filter by the following properties:

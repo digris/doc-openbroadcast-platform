@@ -20,6 +20,10 @@ h1 {
   color: #008000;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 p {
   font-size: 18px;
   letter-spacing: 0.4px;
@@ -156,9 +160,11 @@ em {
 -------------------------------------------------*/
 .section ul li {
   margin-bottom: 8px;
+  font-size: 18px;
 }
 .section ol li {
   margin-bottom: 8px;
+  font-size: 18px;
 }
 
 /* Admonitions (alerts)

@@ -59,6 +59,10 @@ h1 {
   color: $obp-green-dark;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 p {
   font-size: 18px;
   letter-spacing: .4px;
@@ -242,10 +246,12 @@ em {
 .section {
   ul li {
     margin-bottom: 8px;
+    font-size: 18px;
   }
 
   ol li {
     margin-bottom: 8px;
+    font-size: 18px;
   }
 }
 
