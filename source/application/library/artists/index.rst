@@ -56,7 +56,7 @@ on the top-left side of the list.
 
 .. figure:: img/artist-list-order-by-creation-date.png
 
-To change the ordering parameter, click on **Ordering** to open the menu and select a different option.
+You can change the ordering parameter by clicking on **Ordering** to open the menu and selecting a different option.
 
 .. figure:: img/artist-list-order-by-name.png
 
@@ -113,7 +113,7 @@ Click again on any active tag or filter to deselect it and reset the result-set.
 The Artist card
 ===============
 
-The artist card displays some information about the artist.
+A card contains information and actions about an artist in the list.
 
 .. figure:: img/artist-list-card.png
 

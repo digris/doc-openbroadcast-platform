@@ -3,7 +3,6 @@
 .. |wk-license| replace:: *CC-BY-SA License*
 .. _wk-license: https://creativecommons.org/licenses/by-sa/3.0/
 
-
 .. _label:
 
 ######
@@ -41,8 +40,8 @@ To access it, open the **CONTENT** menu, click on **LIBRARY**, and then on **LAB
 
 .. figure:: ../img/library-page-nav-menu-labels.png
 
-Note also that search results are paginated (24 items per page). You can use the pagination controls above the list to
-navigate through the results pages.
+Note that search results are paginated (24 items per page). You can use the pagination controls above the list to
+navigate the results pages.
 
 Sorting the list
 ================
@@ -52,7 +51,7 @@ the top-left of the list.
 
 .. figure:: img/label-list-order-by-creation-date.png
 
-To change the ordering parameter, click on **Ordering** to open the menu and select a different option.
+You can change the ordering parameter by clicking on **Ordering** to open the menu and selecting a different option.
 
 .. figure:: img/label-list-order-by-name.png
 

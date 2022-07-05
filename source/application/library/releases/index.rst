@@ -66,7 +66,7 @@ displayed on the top-left side of the list.
 
 .. figure:: img/release-list-order-by-creation-date.png
 
-To change the ordering parameter, click on **Ordering** to open the menu and select a different option.
+You can change the ordering parameter by clicking on **Ordering** to open the menu and selecting a different option.
 
 .. figure:: img/release-list-order-by-name.png
 
@@ -84,7 +84,7 @@ The available options are:
 Filtering the list
 ==================
 
-The list can be filtered by tags or specific properties associated with the releases.
+You can filter the list by tags and specific properties associated with the releases.
 
 By tags
 -------

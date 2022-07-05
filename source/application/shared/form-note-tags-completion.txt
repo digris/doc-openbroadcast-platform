@@ -1,0 +1,10 @@
+.. note::
+
+  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
+  current text typed in.
+
+  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
+
+  .. figure:: ../img/tags-field-select-create-remove.gif
+
+  To remove a specific tag click on the 'X' within it.

@@ -66,7 +66,7 @@ The available options are:
 
 * :ref:`Name: <track-form-title>` The title of the track.
 * :ref:`Artist name: <track-form-primary-artist>` The name of the artist(s) the track is credited to.
-* Duration**: The duration of the track.
+* **Duration**: The duration of the track.
 * **Num Emissions**: The number of times the track was played on-air (airplay).
 * **Last Emission**: The last date the track was played on-air.
 * **Last Modified**: The last date the track profile was edited.
@@ -110,7 +110,7 @@ Tags and filters also work in combination:
    Example: Show all 'Soul' 'Soundtrack' tracks.
 
 
-Click again on any active tag or filter to deselect it and reset the result-set.
+Click on any active tag or filter to deselect it and reset the result set.
 
 
 .. _track-list-card:
@@ -118,7 +118,79 @@ Click again on any active tag or filter to deselect it and reset the result-set.
 The Track card
 ==============
 
-UNDER CONSTRUCTION
+A card contains information and actions about a track in the list.
+
+.. figure:: img/track-list-track-card-overview.png
+
+Starting at the left, the information is:
+
+* The cover art of the release.
+* The track's :ref:`title <track-form-title>` and the :ref:`type: <track-form-type>` (if different than 'song').
+* The :ref:`artist/s <track-form-primary-artist>` the track is primarily credited to.
+* The associated :ref:`tags <track-form-tags>`.
+* The :ref:`release title <track-form-release-title>`.
+* The label which issued the release. 
+* The audio format of the media file.
+* The duration of the track.
+
+The actions are visible as you move the cursor over the cover art.
+
+You can click the 'Play' button to listen to the track:
+
+.. figure:: img/track-list-track-card-play-button.png
+
+   The :ref:`popup player <popup-player>` opens and starts playing it automatically
+
+or on  'more options' (3 dots) to access additional functionalities:
+
+.. figure:: img/track-list-track-card-context-menu-open.png
+
+The available options are:
+
+* **Play**: Play the track using the :ref:`the popup player <popup-player>`.
+* **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
+* Download: Download the track.
+* **Edit**: Open the :ref:`form view <track-form>` of the track.
+* **Admin view**: *(Admin only)*.
+* Rating tool.
+
+'History' and 'Appearances' are two additional pieces of information displayed when you enable them in the user settings.
+
+.. figure:: ../../users/img/user-form-settings-show-media-appearances-checked.png
+
+The 'Appearances' tooltip shows how many/which type of playlists already include the track: 
+
+* Broadcasts
+* Planned broadcasts (private playlist with target duration set)
+* Public playlists
+
+.. figure:: img/track-list-track-card-appearances-tooltip.png
+
+The 'History' tooltip shows you the past and upcoming dates the track was/will be broadcast. 
+
+.. figure:: img/track-list-track-card-history-tooltip.png
+
+.. warning::
+
+   'History' is an experimental feature and may cause some slowdowns in loading the content of pages. Please keep it
+   deactivated if you don't need it.
+
+.. _track-list-selection:
+
+Actions on selection
+====================
+
+To select one or more track(s), move the cursor over the card and click on it.
+
+.. figure:: img/track-list-select-deselect-tracks.gif
+
+   Click on the card again to deselect it.
+
+The available actions are:
+
+* **Download selection**: Download the selected items *(Radio pro only)*.
+* **Merge selection**: Merge the selected items *(Admin only)*.
+* **Reassign selection**: Reassign the selected items to a different release *(Radio Pro only)*.
 
 .. _track-detail:
 
@@ -449,17 +521,7 @@ One or more keyword(s) to help describe the track (i.e. the music genre / style)
 
 .. figure:: img/track-form-tags.png
 
-.. note::
-
-  Typing inside the 'Tags' field activates the auto-completion, listing all tags in the library whose name matches with the
-  current text typed in.
-
-  Click on the matching tag to select it or hit the 'Enter' key to create a new tag.
-
-  .. figure:: ../img/tags-field-select-create-remove.gif
-
-  To remove a specific tag click on the 'X' within it.
-
+.. include:: ../../shared/form-note-tags-completion.txt
 
 .. _track-form-relations:
 

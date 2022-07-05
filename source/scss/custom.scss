@@ -63,15 +63,32 @@ h2 {
   font-size: 20px;
 }
 
+h2,h3,h4,h5 {
+  margin: 12px 0 8px 0;
+}
+
 p {
   font-size: 18px;
   letter-spacing: .4px;
   line-height: 150%;
+  margin-bottom: 4px;
 }
 
 // Italic text
 em {
   font-size: 14px;
+}
+
+.figure {
+  padding: 4px 0;
+  .caption-text {
+    font-size: 16px;
+  }
+}
+
+.section {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /* Mobile main nav
@@ -228,6 +245,7 @@ em {
 .rst-content .toctree-wrapper ul li, article ul li {
   list-style: circle;
   color: $obp-purple-official;
+  margin-bottom: 4px;
 }
 
 .toctree-wrapper {
@@ -240,17 +258,16 @@ em {
   }
 }
 
-
 /* Page list
 -------------------------------------------------*/
 .section {
   ul li {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     font-size: 18px;
   }
 
   ol li {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     font-size: 18px;
   }
 }
