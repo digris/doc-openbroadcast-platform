@@ -659,8 +659,8 @@ To change the artist, type the name inside the "Artist" field and click on **App
    As for the :ref:`Album artists <release-form-album-artist>`, typing inside the 'Artist' field activates the 
    auto-completion, listing all profiles in the library whose name matches the current text typed in.
 
-To change the license, click on the "License" dropdown menu, select one from the list and finally click on 
-**Apply License to all the tracks**.
+To change the license, click on the "License" dropdown menu, select one of the options from the list and finally click 
+on **Apply License to all the tracks**.
 
 Once you have applied the changes, click the **SAVE** button on the release form to update the information.
 
