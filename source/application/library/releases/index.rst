@@ -643,15 +643,49 @@ To remove a url / link click on the respective 'Delete' check-box and save the f
 Tracklist
 =========
 
-UNDER CONSTRUCTION
+You can edit minimal information about the track/s included in the release directly from the release form.
 
-Bulk editing box
-----------------
+Bulk editing tool
+-----------------
 
-UNDER CONSTRUCTION
+The "bulk edit" tool allows you to change the artist or license of all the tracks simultaneously.
 
-Tracks list
------------
+.. figure:: img/release-form-trackslist-bulk-edit-tool.png
 
-UNDER CONSTRUCTION
+To change the artist, type the name inside the "Artist" field and click on **Apply Artist to all the tracks**.
 
+.. note::
+
+   As for the :ref:`Album artists <release-form-album-artist>`, typing inside the 'Artist' field activates the 
+   auto-completion, listing all profiles in the library whose name matches the current text typed in.
+
+To change the license, click on the "License" dropdown menu, select one from the list and finally click on 
+**Apply License to all the tracks**.
+
+Once you have applied the changes, click the **SAVE** button on the release form to update the information.
+
+Shift lookup results tool
+-------------------------
+
+Coming soon...
+
+.. figure:: img/release-form-trackslist-shift-lookup-results.png
+
+Tracks forms
+------------
+
+.. figure:: img/release-form-trackslist-track.png
+
+   Click on **Edit track** to open the track form and edit additional information.
+
+For each track, you can edit:
+
+* :ref:`Track number <track-form-track-number>`
+* :ref:`Type <track-form-type>`
+* :ref:`License <track-form-license>`
+* :ref:`Title <track-form-title>`
+* :ref:`Track artist <track-form-primary-artist>`
+* :ref:`ISRC code <track-form-isrc>`
+
+After editing any information, click on **SAVE** to confirm the changes or on **CANCEL** to undo the changes and reset 
+the form.

@@ -25,7 +25,7 @@ h2 {
 }
 
 h2, h3, h4, h5 {
-  margin: 12px 0 8px 0;
+  margin: 16px 0 8px 0;
 }
 
 p {
@@ -39,9 +39,6 @@ em {
   font-size: 14px;
 }
 
-.figure {
-  padding: 4px 0;
-}
 .figure .caption-text {
   font-size: 16px;
 }
