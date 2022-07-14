@@ -22,7 +22,11 @@ Every track has a title and is credited to one or more :ref:`artist(s) <artist>`
 .. |mb-track| replace:: *Track*
 .. _mb-track: https://musicbrainz.org/doc/Track
 
-Visit the :ref:`form view <track-form>` chapter to see which information open broadcast collect for a track.
+See also:
+
+* :ref:`The tracks list view <track-list>`
+* :ref:`The track detail view <track-detail>`
+* :ref:`The track form view <track-form>`
 
 .. _track-list:
 
@@ -36,23 +40,40 @@ To access it, open the **CONTENT** menu, click on **LIBRARY** and then on **TRAC
 
 .. figure:: ../img/nav-content-library-tracks.png
 
-Note that search results are paginated (24 items per page). You can use the pagination controls above the list to
-navigate the results pages.
-
 .. figure:: img/track-list-overview.png
 
-The **PLAY ALL** and **QUEUE ALL** buttons allow you to play/queue all tracks in the list at once.
+   The items in the list are paginated (24 per page). Use the pagination controls above the list to navigate 
+   the results pages.
+
+The **PLAY ALL** and **QUEUE ALL** buttons allow you to play/queue all tracks on the list's current page at once.
 
 See also:
 
 * :ref:`The popup player <popup-player>`
+* :ref:`Uploading and importing tracks in the library <upload-new-upload-upload-file>`
 
+.. _track-list-selection:
+
+Actions on selection
+====================
+
+On the right sidebar are available some actions you can execute for multiple items in the list previously selected.
+
+.. figure:: img/track-list-select-deselect-tracks.gif
+
+   Move the cursor over the card and click on it to select the item. Click on the card again to deselect it.
+
+The actions are:
+
+* **Download selection**: Download the selected items *(Radio pro only)*.
+* **Merge selection**: Merge the selected items *(Admin only)*.
+* :ref:`Reassign selection <track-how-tos-reassign-track>`: Reassign the selected items to a different release *(Radio Pro only)*.
 
 Sorting the list
 ================
 
-By default, the tracks are sorted by **Creation date** (descending). The newly created track profile is displayed
-on the top of the list.
+By default, the tracks are sorted by 'Creation date' (descending), and the newly created track profile is at the 
+top of the list.
 
 .. figure:: img/track-list-order-by-creation-date-desc.png
 
@@ -65,12 +86,12 @@ You can change the ordering parameter by clicking on **Ordering** to open the me
 The available options are:
 
 * :ref:`Name: <track-form-title>` The title of the track.
-* :ref:`Artist name: <track-form-primary-artist>` The name of the artist(s) the track is credited to.
-* **Duration**: The duration of the track.
+* :ref:`Artist name: <track-form-primary-artist>` The name of the artist the track is primarily credited to.
+* **Duration**: The duration of the track's media file.
 * **Num Emissions**: The number of times the track was played on-air (airplay).
 * **Last Emission**: The last date the track was played on-air.
-* **Last Modified**: The last date the track profile was edited.
-* **Creation date**: The date the track profile was created.
+* **Last Modified**: The latest date a user edited the track profile.
+* **Creation date**: The date a user created the track profile.
 
 .. _track-list-filter:
 
@@ -79,6 +100,8 @@ Filtering the list
 
 You can filter the list by tags and specific properties associated with the tracks.
 
+The page will automatically reload the filtered results every time you select or deselect a tag or a filter.
+
 By Tags
 -------
 
@@ -86,7 +109,7 @@ Click on **TAGS** to open the tag cloud and then on a tag to select it.
 
 .. figure:: img/track-list-tagcloud-open-tags-selected.png
 
-The page automatically reloads the filtered results every time you select, add, or remove a tag.
+  Click on any active tag to deselect it and reset the result set.
 
 By specific property
 --------------------
@@ -94,6 +117,8 @@ By specific property
 Click on the **Filter: <property>** to open the menu, then click on one or more values in the list.
 
 .. figure:: img/track-list-filters-filter-type-soundtrack.png
+
+   Click on any active filter value to deselect it and reset the result set.
 
 You can filter by the following properties:
 
@@ -109,50 +134,25 @@ Tags and filters also work in combination:
 
    Example: Show all 'Soul' 'Soundtrack' tracks.
 
-
-Click on any active tag or filter to deselect it and reset the result set.
-
-
 .. _track-list-card:
 
 The Track card
 ==============
 
-A card contains information and actions about a track in the list.
+The track card contains information and actions about a track in the list.
 
 .. figure:: img/track-list-track-card-overview.png
 
 Starting at the left, the information is:
 
-* The cover art of the release.
+* The :ref:`cover art of the release <release-form-cover-art>`.
 * The track's :ref:`title <track-form-title>` and the :ref:`type: <track-form-type>` (if different than 'song').
 * The :ref:`artist/s <track-form-primary-artist>` the track is primarily credited to.
-* The associated :ref:`tags <track-form-tags>`.
+* The associated :ref:`tags <track-form-tags>` (if any).
 * The :ref:`release title <track-form-release-title>`.
-* The label which issued the release. 
-* The audio format of the media file.
-* The duration of the track.
-
-The actions are visible as you move the cursor over the cover art.
-
-You can click the 'Play' button to listen to the track:
-
-.. figure:: img/track-list-track-card-play-button.png
-
-   The :ref:`popup player <popup-player>` opens and starts playing it automatically
-
-or on  'more options' (3 dots) to access additional functionalities:
-
-.. figure:: img/track-list-track-card-context-menu-open.png
-
-The available options are:
-
-* **Play**: Play the track using the :ref:`the popup player <popup-player>`.
-* **Queue**: Queue the tracks in :ref:`the popup player <popup-player>`.
-* Download: Download the track.
-* **Edit**: Open the :ref:`form view <track-form>` of the track.
-* **Admin view**: *(Admin only)*.
-* Rating tool.
+* The :ref:`label <label>` which issued the release. 
+* The audio format of the track's media file.
+* The duration of the track's media file.
 
 'History' and 'Appearances' are two additional pieces of information displayed when you enable them in the user settings.
 
@@ -160,11 +160,16 @@ The available options are:
 
 The 'Appearances' tooltip shows how many/which type of playlists already include the track: 
 
-* Broadcasts
-* Planned broadcasts (private playlist with target duration set)
-* Public playlists
+* **Broadcasts**: A broadcast-ready playlist.
+* **Planned broadcasts**: A private playlist with a target duration set.
+* **Public playlists**: A public playlist.
 
 .. figure:: img/track-list-track-card-appearances-tooltip.png
+
+See also:
+
+* :ref:`Converting a 'Private' playlist into 'Public' <playlist-how-to-transform-private-to-public>`
+* :ref:`Converting a playlist into 'Broadcast' <playlist-how-to-transform-public-to-broadcast>`
 
 The 'History' tooltip shows you the past and upcoming dates the track was/will be broadcast. 
 
@@ -175,22 +180,19 @@ The 'History' tooltip shows you the past and upcoming dates the track was/will b
    'History' is an experimental feature and may cause some slowdowns in loading the content of pages. Please keep it
    deactivated if you don't need it.
 
-.. _track-list-selection:
+The play icon is visible as you move the cursor over the cover art:
 
-Actions on selection
-====================
+.. figure:: img/track-list-track-card-play-button.png
 
-To select one or more track(s), move the cursor over the card and click on it.
+   The :ref:`popup player <popup-player>` opens and starts playing it automatically
 
-.. figure:: img/track-list-select-deselect-tracks.gif
+You can access additional actions by clicking on 'more options' (3 dots):
 
-   Click on the card again to deselect it.
+.. figure:: img/track-list-track-card-context-menu-open.png
 
-The available actions are:
+The actions are:
 
-* **Download selection**: Download the selected items *(Radio pro only)*.
-* **Merge selection**: Merge the selected items *(Admin only)*.
-* **Reassign selection**: Reassign the selected items to a different release *(Radio Pro only)*.
+.. include:: track-card-context-menu.txt
 
 .. _track-detail:
 
@@ -198,11 +200,86 @@ The available actions are:
 Detail view
 ***********
 
-UNDER CONSTRUCTION
+The detail view displays all information related to a track.
+
+You can open it by clicking on the track title in the library or release tracks list. 
+
+.. figure:: img/track-detail-open-detail-view-from-release-trackslist.png
 
 .. figure:: img/track-detail-overview.png
 
+On the right sidebar are available the following actions:
 
+* **Edit**: Open the :ref:`form <track-form>` to edit the track information.
+* **Admin view**: Open the track profile in the admin interface *(Admin only)*.
+* **Download**: Download the track.
+
+Below are the URLs of the track page on other online platforms (if any).
+
+The details card
+================
+
+The details card contains information and actions about the track.
+
+.. figure:: img/track-detail-overview.png
+
+Starting at the top left, the information is:
+
+* The track's :ref:`title <track-form-title>` and the :ref:`type: <track-form-type>`.
+* The :ref:`artist/s <track-form-primary-artist>` the track is primarily credited to.
+* Release: The :ref:`release title <track-form-release-title>`.
+* Label: The :ref:`label <label>` which issued the release. 
+* ISRC: The :ref:`ISRC code <track-form-isrc>`.
+* License: The :ref:`license <track-form-license>` applied to the track.
+* Created: The date a user created the track profile and the username.
+* Updated: The latest date a user edited the track information and the username.
+* The associated :ref:`tags <track-form-tags>` (if any).
+* The waveform image of the track's media file.
+* The :ref:`cover art of the release <release-form-cover-art>`.
+* The rating tool.
+
+The actions are visible as you move the cursor over the cover art.
+
+.. figure:: img/track-detail-overview-actions.png
+
+   Click the play icon to listen to the track or on 'more options' (3 dots) to access additional actions.
+
+The actions are:
+
+.. include:: track-card-context-menu.txt
+
+The overview tab
+================
+
+The overview tab shows you which Broadcast/Public playlists already include the track:
+
+.. figure:: img/track-detail-overview-tab-playlists.png
+
+As well as the track's media file information:
+
+.. figure:: img/track-detail-overview-tab-file-info.png
+
+The information is: 
+
+* **Encoding**: The audio encoding properties.
+* **UUID**: The Universal Unique Identifier code.
+* **Original filename**: The name given to the file and file extension.
+
+
+Credits tab
+===========
+
+The credits tab shows you all the extra artist(s) credited to the recording (remixer, composer, lyricist, featuring, etc.).
+
+.. figure:: img/track-detail-credits-tab.png
+
+Statistics tab
+==============
+
+The statistics tab shows a bar chart illustrating how often the track was played on the platform (plays) and 
+broadcasted on-air (playout) monthly.
+
+.. figure:: img/track-detail-statistics-tab.png
 
 .. _track-form:
 
@@ -224,7 +301,7 @@ On the top side of the form are displayed the current information of the track (
 On the right side of the page are available the following options:
 
 * **Back to detail view**: Exit the form and return to the detail view.
-* **Administration view**: *(Admin only)*.
+* **Administration view**: Open the track profile in the admin interface *(Admin only)*.
 
 A comparison tool is available to help complete the information:
 
@@ -481,7 +558,6 @@ and build upon a work that they (the author) have created.
 * BY-NC-SA: Attribution + Noncommercial + ShareAlike
 * BY-ND: Attribution + NoDerivatives
 * BY-SA: Attribution + ShareAlike
-
 
 .. _track-form-meta:
 

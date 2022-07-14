@@ -50,7 +50,7 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 }
 
 h1, h2, h3, h4, h5 {
-  color: $obp-grey-7;
+  color: $obp-black;
   text-transform: uppercase;
   letter-spacing: .8px;
 }
@@ -67,6 +67,10 @@ h2,h3,h4,h5 {
   margin: 16px 0 8px 0;
 }
 
+h4 {
+  font-size: 105%;
+}
+
 p {
   font-size: 18px;
   letter-spacing: .4px;
@@ -79,8 +83,11 @@ em {
   font-size: 14px;
 }
 
+.rst-content div.figure {
+  margin-bottom: 16px;
+}
+
 .figure {
-  // padding: 4px 0;
   .caption-text {
     font-size: 16px;
   }

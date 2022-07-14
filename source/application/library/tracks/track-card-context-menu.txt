@@ -1,0 +1,7 @@
+
+* **Play**: Play the track using the :ref:`the popup player <popup-player>`.
+* **Queue**: Queue the track in :ref:`the popup player <popup-player>`.
+* **Download**: Download the track.
+* **Edit**: Open the :ref:`form <track-form>` to edit the track information.
+* **Admin view**: Open the track profile in the admin interface *(Admin only)*.
+* **Rating tool**: Like or dislike the track.
